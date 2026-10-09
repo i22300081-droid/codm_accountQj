@@ -549,6 +549,319 @@ input:focus,select:focus,textarea:focus{border-color:#82945c!important;box-shado
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 
+<style id="codm-neon-redesign-v1">
+:root{--bg:#05090a;--card:#0b1414;--card2:#101d1b;--line:#243b35;--text:#f3fff8;--muted:#9cb8ac;--primary:#b7ff28;--primary2:#52d61a;--green:#78ff36;--gold:#d9ff67;--accent:#b7ff28;--accent2:#52d61a;--success:#48f59a;--danger:#ff4057;--shadow:0 18px 50px #0009}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:radial-gradient(ellipse at 50% -15%,#203f1b 0,transparent 38%),radial-gradient(circle at 0 45%,#10251c 0,transparent 34%),linear-gradient(160deg,#050909,#07100f 48%,#030606)!important;color:var(--text);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.12;background:repeating-linear-gradient(0deg,transparent 0 3px,#b7ff28 4px,transparent 5px 7px);mask-image:linear-gradient(to bottom,black,transparent 75%);animation:codmScan 12s linear infinite}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.12;background-image:linear-gradient(#9cff2a18 1px,transparent 1px),linear-gradient(90deg,#9cff2a18 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(ellipse at center,black,transparent 80%)}
+body>*{position:relative;z-index:1}
+header{background:rgba(4,10,8,.88)!important;border-bottom:1px solid #8dff2c55!important;box-shadow:0 8px 28px #0006,0 1px #b7ff281c;backdrop-filter:blur(18px) saturate(140%)}
+.brand{letter-spacing:1px;text-shadow:0 0 20px #aaff2d42}.brand span{color:#b7ff28!important}
+.nav{min-height:68px}.navlinks{align-items:center}
+.btn{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#b7ff28,#67e51e 55%,#a5ff45)!important;color:#071007!important;border:1px solid #d4ff85!important;border-radius:12px!important;box-shadow:0 0 0 1px #b7ff2820 inset,0 5px 0 #2e8018,0 9px 25px #70ff2522!important;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease!important;animation:codmBtnGlow 3.5s ease-in-out infinite}
+.btn:before{content:"";position:absolute;inset:-50% auto -50% -80%;width:45%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,#ffffffa8,transparent);z-index:-1;animation:codmShine 4.2s ease-in-out infinite}
+.btn:hover{transform:translateY(-3px) scale(1.015)!important;filter:brightness(1.08);box-shadow:0 0 20px #a9ff3470,0 5px 0 #2e8018!important}
+.btn:active{transform:translateY(2px) scale(.98)!important;box-shadow:0 2px 0 #2e8018!important}
+.btn.secondary{background:linear-gradient(135deg,#15231d,#0a100e)!important;color:#d8ffe2!important;border:1px solid #3c6447!important;box-shadow:inset 0 0 0 1px #ffffff05,0 8px 22px #0004!important;animation:none}
+.btn.green{background:linear-gradient(120deg,#aaff26,#3edc48)!important}.btn.red{background:linear-gradient(120deg,#ff596b,#a20e29)!important;color:white!important;border-color:#ff7c8a!important;box-shadow:0 5px 0 #64121d,0 10px 24px #ff334522!important}
+.hero{position:relative;isolation:isolate;padding-top:clamp(45px,8vw,86px)!important;padding-bottom:48px!important}
+.hero:before{content:none!important;display:none!important}
+.hero h1{font-weight:1000;letter-spacing:-1px;text-shadow:0 5px 35px #000,0 0 35px #aaff2816;animation:codmRise .85s both}
+.hero h1 span{color:#b7ff28!important;text-shadow:0 0 22px #a7ff2d50}
+.hero p{color:#b5c9be!important;animation:codmRise 1s .08s both}
+.badge{color:#d7ff9b!important;background:#8dff2c12!important;border:1px solid #b7ff2866!important;box-shadow:0 0 24px #a7ff2814;animation:codmBadge 3s ease-in-out infinite}
+.section-title{display:flex;align-items:center;gap:12px;font-weight:950;text-shadow:0 0 18px #a7ff2815}
+.section-title:before{content:"";width:5px;height:28px;border-radius:3px;background:#b7ff28;box-shadow:0 0 15px #b7ff28;display:inline-block}
+.card,.kpi,.order,.modal-box,.reservation-board,.leaderboard-row,.admin-panel .panel,.admin-order-status-tab{border-color:#2a4939!important;background:linear-gradient(145deg,rgba(17,31,25,.97),rgba(7,14,12,.97))!important;box-shadow:0 14px 34px #0005,inset 0 1px #ffffff08!important;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease!important}
+.card,.tariff{position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#b7ff28,transparent);transform:translateX(-100%);animation:codmEdge 5s ease-in-out infinite}
+.card:hover,.order:hover,.leaderboard-row:hover,.kpi:hover{transform:translateY(-4px)!important;border-color:#b7ff2877!important;box-shadow:0 18px 38px #0007,0 0 22px #a7ff2810!important}
+.price,.total{color:#b7ff28!important;text-shadow:0 0 22px #a7ff2833}
+input,textarea,select{background:#07100d!important;color:#f3fff8!important;border-color:#294537!important;transition:border-color .2s,box-shadow .2s,transform .2s}
+input:focus,textarea:focus,select:focus{border-color:#b7ff28!important;box-shadow:0 0 0 3px #b7ff281b,0 0 20px #a7ff2810;transform:translateY(-1px)}
+.notice{background:#b7ff280c!important;border-color:#b7ff2844!important;color:#dfffbd!important}
+.admin-order-status-tab{position:relative;overflow:hidden;color:#dfffe7!important;border:1px solid #2c4a38!important;background:linear-gradient(145deg,#13251b,#09110d)!important;border-radius:13px!important;transition:all .2s ease!important}
+.admin-order-status-tab.active{color:#071007!important;background:linear-gradient(120deg,#b7ff28,#69e51c)!important;border-color:#d4ff85!important;box-shadow:0 0 0 1px #b7ff2822 inset,0 0 24px #9dff2840!important;animation:codmActive 2s ease-in-out infinite}
+.admin-order-status-tab b{display:inline-flex;min-width:24px;justify-content:center;padding:2px 6px;border-radius:99px;background:#ffffff1b}
+#adminOrders .order{animation:codmRise .45s both}
+#adminOrders .order-head>b{color:#b7ff28!important}
+#adminOrders .order .status{border:1px solid #b7ff2830;background:#b7ff2810;color:#d8ffab}
+.kpi b{color:#b7ff28!important;text-shadow:0 0 18px #a7ff2820}
+footer{border-color:#294537!important;background:linear-gradient(180deg,transparent,#02060470)!important}
+.modal{backdrop-filter:blur(9px);animation:codmFade .2s both}.modal-box{border-color:#b7ff2850!important;box-shadow:0 25px 90px #000c,0 0 35px #a7ff2810!important;animation:codmModal .28s cubic-bezier(.2,.8,.2,1) both}
+#adminTab-orders .admin-order-tools input,#adminTab-orders .admin-order-tools select{border-radius:12px}
+@keyframes codmScan{0%{transform:translateY(-15px)}100%{transform:translateY(15px)}}
+@keyframes codmBtnGlow{0%,100%{filter:drop-shadow(0 0 0 #a7ff2800)}50%{filter:drop-shadow(0 0 7px #a7ff282c)}}
+@keyframes codmShine{0%,58%{left:-80%}78%,100%{left:150%}}
+@keyframes codmRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes codmFade{from{opacity:0}to{opacity:1}}
+@keyframes codmModal{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes codmBadge{0%,100%{box-shadow:0 0 8px #a7ff280c}50%{box-shadow:0 0 20px #a7ff2825}}
+@keyframes codmEdge{0%,25%{transform:translateX(-100%)}65%,100%{transform:translateX(100%)}}
+@keyframes codmActive{0%,100%{box-shadow:0 0 12px #a7ff2820}50%{box-shadow:0 0 25px #a7ff2850}}
+@media(max-width:520px){.hero{padding-top:38px!important}.hero h1{line-height:1.35}.card,.kpi{border-radius:17px!important}.btn{min-height:43px}.admin-order-status-tab{padding:10px 6px!important;font-size:12px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+
+
+<style id="neon-sweeping-borders">
+:root{--neon:#39ff14;--neon2:#00ffc8;--neon3:#a6ff00}
+/* Animated light trace that travels around important panels */
+.card,.order,.hero,.modal-box,.kpi,.schedule-editor,.schedule-day,.order-date-title,
+.reservation-board,.leaderboard-row,.shamsi-box,.notice,.admin-panel,.panel,.section-panel,
+.shop-card,.product-card,.support-card,.profile-card{
+  position:relative;isolation:isolate;overflow:hidden;
+  border-color:rgba(57,255,20,.25)!important;
+  box-shadow:0 0 0 1px rgba(57,255,20,.035),0 10px 32px rgba(0,0,0,.28),0 0 20px rgba(57,255,20,.035);
+}
+.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,
+.schedule-editor::after,.schedule-day::after,.order-date-title::after,
+.reservation-board::after,.leaderboard-row::after,.shamsi-box::after,.notice::after,
+.admin-panel::after,.panel::after,.section-panel::after,.shop-card::after,
+.product-card::after,.support-card::after,.profile-card::after{
+  content:"";position:absolute;inset:0;padding:1.5px;border-radius:inherit;pointer-events:none;z-index:5;
+  background:conic-gradient(from var(--sweep-angle,0deg),transparent 0 67%,rgba(57,255,20,.12) 73%,var(--neon) 78%,var(--neon2) 82%,transparent 89% 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  animation:neon-border-orbit 4.2s linear infinite;
+  filter:drop-shadow(0 0 3px rgba(57,255,20,.65));opacity:.9
+}
+@keyframes neon-border-orbit{to{--sweep-angle:360deg}}
+@property --sweep-angle{syntax:"<angle>";inherits:false;initial-value:0deg}
+.card:hover,.order:hover,.leaderboard-row:hover,.schedule-day:hover{
+  border-color:rgba(57,255,20,.65)!important;
+  box-shadow:0 0 0 1px rgba(57,255,20,.12),0 0 24px rgba(57,255,20,.13),0 16px 42px rgba(0,0,0,.35);
+  transform:translateY(-2px);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease
+}
+.btn{position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,filter .22s ease!important}
+.btn::after{content:"";position:absolute;top:-60%;left:-80%;width:45%;height:220%;transform:rotate(22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transition:left .65s ease;pointer-events:none}
+.btn:hover{filter:brightness(1.12);box-shadow:0 0 18px rgba(57,255,20,.25)!important}
+.btn:hover::after{left:140%}
+input:focus,textarea:focus,select:focus{border-color:var(--neon)!important;box-shadow:0 0 0 3px rgba(57,255,20,.12),0 0 18px rgba(57,255,20,.12)!important}
+.section-title{position:relative;padding-inline-start:14px}
+.section-title::before{content:"";position:absolute;right:0;top:12%;height:76%;width:3px;border-radius:8px;background:linear-gradient(var(--neon),var(--neon2));box-shadow:0 0 10px var(--neon);animation:neon-title-pulse 1.8s ease-in-out infinite alternate}
+@keyframes neon-title-pulse{from{opacity:.45;box-shadow:0 0 4px var(--neon)}to{opacity:1;box-shadow:0 0 15px var(--neon),0 0 24px rgba(0,255,200,.35)}}
+@media(prefers-reduced-motion:reduce){.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,.schedule-editor::after,.schedule-day::after,.order-date-title::after,.reservation-board::after,.leaderboard-row::after,.shamsi-box::after,.notice::after,.admin-panel::after,.panel::after,.section-panel::after,.shop-card::after,.product-card::after,.support-card::after,.profile-card::after,.section-title::before{animation:none}.card:hover,.order:hover,.leaderboard-row:hover,.schedule-day:hover{transform:none}}
+</style>
+
+
+<style id="codm-god-tier-purple-ice-gold-borders">
+:root{--edge-white:rgba(196,244,255,.98);--edge-orange:#b84dff;--edge-orange-hot:#ffd36a}
+/* White base borders with a moving orange highlight */
+.card,.order,.hero,.modal-box,.kpi,.schedule-day,.leaderboard-row,.reservation-board,.order-hero-strip,.tracking-heading,.customer-order-tracking,.admin-order-status-tab,.shortcut-card,.price-editor,.discount-create-card,.discount-list-item,.name-modal,.shamsi-box{position:relative;isolation:isolate;border-color:rgba(255,255,255,.52)!important;box-shadow:0 0 0 1px rgba(255,255,255,.035),0 0 14px rgba(255,255,255,.045),0 10px 30px rgba(0,0,0,.28)!important}
+.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,.schedule-day::after,.leaderboard-row::after,.reservation-board::after,.order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,.admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,.discount-create-card::after,.discount-list-item::after,.name-modal::after,.shamsi-box::after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--edge-angle,0deg),transparent 0 48%,var(--edge-white) 48%,var(--edge-orange) 59%,var(--edge-orange-hot) 65%,transparent 74% 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:2;animation:edgeOrbit 4.2s linear infinite;opacity:1;filter:drop-shadow(0 0 3px rgba(108,220,255,.65)) drop-shadow(0 0 7px rgba(184,77,255,.42))}
+@keyframes edgeOrbit{to{--edge-angle:360deg}}
+@property --edge-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
+.btn:hover,.bottom-nav-btn:hover,.admin-tab:hover{box-shadow:0 0 16px rgba(184,77,255,.32),0 0 12px rgba(108,220,255,.22)!important;filter:brightness(1.12)}
+input:focus,textarea:focus,select:focus{border-color:#c36cff!important;box-shadow:0 0 0 2px rgba(184,77,255,.20),0 0 16px rgba(108,220,255,.17)!important}
+.section-title,.form-card-heading h3{ text-shadow:0 0 12px rgba(184,77,255,.22)}
+@media(prefers-reduced-motion:reduce){.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,.schedule-day::after,.leaderboard-row::after,.reservation-board::after,.order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,.admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,.discount-create-card::after,.discount-list-item::after,.name-modal::after,.shamsi-box::after{animation:none}}
+</style>
+<style id="codm-god-tier-border-fx">
+:root{--god-orange:#ff7a18;--god-gold:#ffd18a;--god-white:#fff;--god-amber:#ffad42}
+.card,.order,.hero,.modal-box,.kpi,.schedule-day,.leaderboard-row,.reservation-board,.order-hero-strip,.tracking-heading,.customer-order-tracking,.admin-order-status-tab,.shortcut-card,.price-editor,.discount-create-card,.discount-list-item,.name-modal,.shamsi-box{
+  border:1px solid rgba(255,255,255,.72)!important;
+  box-shadow:0 0 0 1px rgba(255,255,255,.08),0 0 10px rgba(255,255,255,.09),0 0 22px rgba(255,132,35,.12),0 12px 32px rgba(0,0,0,.34)!important;
+  transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease,filter .28s ease;
+}
+.card::before,.order::before,.hero::before,.modal-box::before,.kpi::before,.schedule-day::before,.leaderboard-row::before,.reservation-board::before,.order-hero-strip::before,.tracking-heading::before,.customer-order-tracking::before,.admin-order-status-tab::before,.shortcut-card::before,.price-editor::before,.discount-create-card::before,.discount-list-item::before,.name-modal::before,.shamsi-box::before{
+ content:"";position:absolute;inset:-7px;border-radius:inherit;pointer-events:none;z-index:-1;
+ background:conic-gradient(from var(--edge-angle,0deg),transparent 0 20%,rgba(255,255,255,.1) 24%,#fff 27%,#ff8a22 31%,#ffd18a 33%,transparent 37% 49%,rgba(255,128,20,.12) 54%,#ff7a18 58%,#fff4df 61%,transparent 65% 80%,#ff9d3d 84%,transparent 89% 100%);
+ filter:blur(8px);opacity:.58;animation:godAura 3.2s linear infinite;
+}
+.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,.schedule-day::after,.leaderboard-row::after,.reservation-board::after,.order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,.admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,.discount-create-card::after,.discount-list-item::after,.name-modal::after,.shamsi-box::after{
+ background:conic-gradient(from var(--edge-angle,0deg),transparent 0 7%,rgba(255,255,255,.12) 10%,#fff 13%,#ff7a18 17%,#ffc477 19%,transparent 23% 39%,#fff 43%,#ff8a22 47%,transparent 51% 68%,rgba(255,255,255,.22) 72%,#ff9a36 76%,#fff 79%,transparent 84% 100%)!important;
+ padding:2px!important;opacity:1!important;filter:drop-shadow(0 0 2px #fff) drop-shadow(0 0 5px rgba(255,126,24,.95)) drop-shadow(0 0 12px rgba(255,126,24,.62));animation:godEdgeRun 2.6s linear infinite!important;
+}
+.card:hover,.order:hover,.schedule-day:hover,.leaderboard-row:hover,.shortcut-card:hover,.discount-list-item:hover{
+ transform:translateY(-3px) scale(1.012);filter:brightness(1.12);
+ box-shadow:0 0 0 1px rgba(255,255,255,.22),0 0 14px rgba(255,255,255,.18),0 0 30px rgba(255,128,24,.34),0 0 55px rgba(255,128,24,.13),0 16px 38px rgba(0,0,0,.42)!important;
+}
+.btn,.bottom-nav-btn,.admin-tab{position:relative;overflow:hidden;isolation:isolate}
+.btn::after,.bottom-nav-btn::after,.admin-tab::after{content:"";position:absolute;inset:-80% auto -80% -45%;width:28%;transform:rotate(22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.72),rgba(255,171,75,.85),transparent);filter:blur(2px);animation:godSweep 3.4s ease-in-out infinite;pointer-events:none}
+.btn:hover,.bottom-nav-btn:hover,.admin-tab:hover{border-color:#fff!important;box-shadow:0 0 8px rgba(255,255,255,.48),0 0 22px rgba(255,130,24,.5),inset 0 0 16px rgba(255,255,255,.08)!important;filter:brightness(1.15)}
+@keyframes godEdgeRun{to{--edge-angle:360deg}}
+@keyframes godAura{0%{transform:scale(.99);opacity:.36}50%{transform:scale(1.018);opacity:.8}100%{transform:scale(.99);opacity:.36}}
+@keyframes godSweep{0%,35%{left:-45%;opacity:0}45%{opacity:1}75%,100%{left:125%;opacity:0}}
+input:focus,textarea:focus,select:focus{border-color:#ffb45f!important;box-shadow:0 0 0 2px rgba(255,255,255,.1),0 0 12px rgba(255,255,255,.16),0 0 25px rgba(255,132,30,.24)!important}
+@media(prefers-reduced-motion:reduce){.card::before,.order::before,.hero::before,.modal-box::before,.kpi::before,.schedule-day::before,.leaderboard-row::before,.reservation-board::before,.order-hero-strip::before,.tracking-heading::before,.customer-order-tracking::before,.admin-order-status-tab::before,.shortcut-card::before,.price-editor::before,.discount-create-card::before,.discount-list-item::before,.name-modal::before,.shamsi-box::before,.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,.schedule-day::after,.leaderboard-row::after,.reservation-board::after,.order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,.admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,.discount-create-card::after,.discount-list-item::after,.name-modal::after,.shamsi-box::after,.btn::after,.bottom-nav-btn::after,.admin-tab::after{animation:none!important}}
+</style>
+
+<style id="codm-full-perimeter-orbit-fix">
+/* Full 360-degree orbit: continuous purple, ice-blue and gold light around the entire frame */
+:root{
+  --orbit-purple:#b84dff;
+  --orbit-ice:#6cdcff;
+  --orbit-gold:#ffd36a;
+}
+.card,.order,.hero,.modal-box,.kpi,.schedule-day,.leaderboard-row,
+.reservation-board,.order-hero-strip,.tracking-heading,.customer-order-tracking,
+.admin-order-status-tab,.shortcut-card,.price-editor,.discount-create-card,
+.discount-list-item,.name-modal,.shamsi-box{
+  position:relative;
+  isolation:isolate;
+}
+.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,
+.schedule-day::after,.leaderboard-row::after,.reservation-board::after,
+.order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,
+.admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,
+.discount-create-card::after,.discount-list-item::after,.name-modal::after,
+.shamsi-box::after{
+  content:"";
+  position:absolute;
+  inset:-1.5px;
+  border-radius:inherit;
+  padding:2px;
+  background:conic-gradient(
+    from var(--edge-angle,0deg),
+    #b84dff 0deg,
+    #e6b5ff 42deg,
+    #6cdcff 95deg,
+    #d7f8ff 135deg,
+    #ffd36a 185deg,
+    #fff4cf 220deg,
+    #b84dff 270deg,
+    #6cdcff 320deg,
+    #b84dff 360deg
+  )!important;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+  z-index:3;
+  opacity:1!important;
+  filter:drop-shadow(0 0 2px rgba(255,255,255,.95))
+         drop-shadow(0 0 5px rgba(108,220,255,.9))
+         drop-shadow(0 0 11px rgba(184,77,255,.72))
+         drop-shadow(0 0 18px rgba(255,211,106,.38))!important;
+  animation:edgeOrbit 3.1s linear infinite!important;
+}
+.card::before,.order::before,.hero::before,.modal-box::before,.kpi::before,
+.schedule-day::before,.leaderboard-row::before,.reservation-board::before,
+.order-hero-strip::before,.tracking-heading::before,.customer-order-tracking::before,
+.admin-order-status-tab::before,.shortcut-card::before,.price-editor::before,
+.discount-create-card::before,.discount-list-item::before,.name-modal::before,
+.shamsi-box::before{
+  background:conic-gradient(from calc(var(--edge-angle,0deg) * -1),
+    transparent 0deg,rgba(184,77,255,.58) 65deg,
+    rgba(108,220,255,.62) 150deg,rgba(255,211,106,.52) 235deg,
+    transparent 320deg,transparent 360deg)!important;
+  filter:blur(10px)!important;
+  opacity:.72!important;
+  animation:godAura 4.4s ease-in-out infinite!important;
+}
+@keyframes edgeOrbit{to{--edge-angle:360deg}}
+@media(prefers-reduced-motion:reduce){
+  .card::before,.order::before,.hero::before,.modal-box::before,.kpi::before,
+  .schedule-day::before,.leaderboard-row::before,.reservation-board::before,
+  .order-hero-strip::before,.tracking-heading::before,.customer-order-tracking::before,
+  .admin-order-status-tab::before,.shortcut-card::before,.price-editor::before,
+  .discount-create-card::before,.discount-list-item::before,.name-modal::before,
+  .shamsi-box::before,.card::after,.order::after,.hero::after,.modal-box::after,
+  .kpi::after,.schedule-day::after,.leaderboard-row::after,.reservation-board::after,
+  .order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,
+  .admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,
+  .discount-create-card::after,.discount-list-item::after,.name-modal::after,
+  .shamsi-box::after{animation:none!important}
+}
+</style>
+
+
+<style id="codm-smooth-orbit-performance">
+/* Smooth mobile-friendly perimeter animation: animate only the angle, reduce blur/paint cost */
+.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,
+.schedule-day::after,.leaderboard-row::after,.reservation-board::after,
+.order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,
+.admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,
+.discount-create-card::after,.discount-list-item::after,.name-modal::after,
+.shamsi-box::after{
+  will-change:background;
+  filter:drop-shadow(0 0 2px rgba(108,220,255,.62))!important;
+  animation:edgeOrbitSmooth 5.2s linear infinite!important;
+}
+.card::before,.order::before,.hero::before,.modal-box::before,.kpi::before,
+.schedule-day::before,.leaderboard-row::before,.reservation-board::before,
+.order-hero-strip::before,.tracking-heading::before,.customer-order-tracking::before,
+.admin-order-status-tab::before,.shortcut-card::before,.price-editor::before,
+.discount-create-card::before,.discount-list-item::before,.name-modal::before,
+.shamsi-box::before{
+  filter:blur(4px)!important;
+  opacity:.36!important;
+  animation:none!important;
+}
+@keyframes edgeOrbitSmooth{to{--edge-angle:360deg}}
+@media(max-width:700px){
+  .card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,
+  .schedule-day::after,.leaderboard-row::after,.reservation-board::after,
+  .order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,
+  .admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,
+  .discount-create-card::after,.discount-list-item::after,.name-modal::after,
+  .shamsi-box::after{filter:drop-shadow(0 0 1.5px rgba(108,220,255,.52))!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,
+  .schedule-day::after,.leaderboard-row::after,.reservation-board::after,
+  .order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,
+  .admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,
+  .discount-create-card::after,.discount-list-item::after,.name-modal::after,
+  .shamsi-box::after{animation:none!important}
+}
+</style>
+
+
+<style id="codm-price-tariff-orbit">
+/* Extend the smooth full-perimeter orbit to pricing/tariff cards and price labels */
+.price-card,.pricing-card,.price-card-item,.price-plan,.pricing-plan,
+.tariff-card,.tariff-item,.price-box,.price-option,.price-package,
+.price-item,.product-price-card,.service-price-card,.price-table tr,
+.price-table td,.pricing-grid .card,.price-list .item,
+[class*="price-card"],[class*="pricing-card"],[class*="tariff-card"],
+[class*="price-plan"],[class*="price-package"],[class*="price-option"]{
+  position:relative;
+  isolation:isolate;
+}
+.price-card::after,.pricing-card::after,.price-card-item::after,.price-plan::after,
+.pricing-plan::after,.tariff-card::after,.tariff-item::after,.price-box::after,
+.price-option::after,.price-package::after,.price-item::after,
+.product-price-card::after,.service-price-card::after,
+.price-table tr::after,.price-table td::after,.pricing-grid .card::after,
+.price-list .item::after,[class*="price-card"]::after,
+[class*="pricing-card"]::after,[class*="tariff-card"]::after,
+[class*="price-plan"]::after,[class*="price-package"]::after,
+[class*="price-option"]::after{
+  content:"";
+  position:absolute;
+  inset:-1.5px;
+  border-radius:inherit;
+  padding:2px;
+  background:conic-gradient(from var(--edge-angle,0deg),
+    #b84dff 0deg,#e6b5ff 42deg,#6cdcff 95deg,#d7f8ff 135deg,
+    #ffd36a 185deg,#fff4cf 220deg,#b84dff 270deg,#6cdcff 320deg,#b84dff 360deg);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+  z-index:5;
+  opacity:1;
+  filter:drop-shadow(0 0 2px rgba(108,220,255,.62));
+  animation:edgeOrbitSmooth 5.2s linear infinite;
+}
+@media(max-width:700px){
+  .price-card::after,.pricing-card::after,.price-card-item::after,.price-plan::after,
+  .pricing-plan::after,.tariff-card::after,.tariff-item::after,.price-box::after,
+  .price-option::after,.price-package::after,.price-item::after,
+  .product-price-card::after,.service-price-card::after,
+  .price-table tr::after,.price-table td::after,.pricing-grid .card::after,
+  .price-list .item::after,[class*="price-card"]::after,
+  [class*="pricing-card"]::after,[class*="tariff-card"]::after,
+  [class*="price-plan"]::after,[class*="price-package"]::after,
+  [class*="price-option"]::after{
+    filter:drop-shadow(0 0 1.5px rgba(108,220,255,.52));
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -687,7 +1000,13 @@ input:focus,select:focus,textarea:focus{border-color:#82945c!important;box-shado
     </div>
   </div>
   <div id="adminTab-orders" class="admin-tab-panel">
-    <div class="admin-section-intro"><h3>سفارش‌ها</h3><p class="small">سفارش‌های جدیدتر بالاتر نمایش داده می‌شوند.</p></div>
+    <div class="admin-section-intro"><h3>سفارش‌ها</h3><p class="small">سفارش‌ها بر اساس وضعیت در چهار بخش جدا نمایش داده می‌شوند.</p></div>
+    <div id="adminOrderStatusTabs" class="admin-order-status-tabs" role="tablist" aria-label="فیلتر وضعیت سفارش‌ها">
+      <button type="button" class="admin-order-status-tab active" data-order-group="review" onclick="showAdminOrderGroup('review')">🔎 در حال بررسی <b id="adminCountReview">۰</b></button>
+      <button type="button" class="admin-order-status-tab" data-order-group="running" onclick="showAdminOrderGroup('running')">⚙️ در حال انجام <b id="adminCountRunning">۰</b></button>
+      <button type="button" class="admin-order-status-tab" data-order-group="done" onclick="showAdminOrderGroup('done')">✅ انجام‌شده <b id="adminCountDone">۰</b></button>
+      <button type="button" class="admin-order-status-tab" data-order-group="expired" onclick="showAdminOrderGroup('expired')">⏰ منقضی‌شده <b id="adminCountExpired">۰</b></button>
+    </div>
     <div id="adminOrders" class="orders"></div>
     <div class="actions"><button class="btn red" onclick="clearOrders()">حذف همه سفارش‌ها</button></div>
   </div>
@@ -1331,19 +1650,38 @@ function checkCustomerConfirmation(){
   }
 }
 
+let activeAdminOrderGroup="review";
+function adminOrderGroup(o){
+  const s=normalizeOrderStatus(o.status);
+  if(["تأیید شد","تکمیل شد","تکمیل‌شده","تکمیل شده","انجام شد","انجام‌شده"].includes(s)) return "done";
+  if(["منقضی‌شده","لغو شد","لغو شده"].includes(s)) return "expired";
+  if(["در حال اجرا","درحال انجام","در حال انجام"].includes(s)) return "running";
+  return "review";
+}
+function showAdminOrderGroup(group){
+  const allowed=["review","running","done","expired"];
+  activeAdminOrderGroup=allowed.includes(group)?group:"review";
+  document.querySelectorAll(".admin-order-status-tab").forEach(b=>{const on=b.dataset.orderGroup===activeAdminOrderGroup;b.classList.toggle("active",on);b.setAttribute("aria-selected",on?"true":"false")});
+  renderAdminOrderGroups();
+}
+function renderAdminOrderGroups(){
+  const box=document.getElementById("adminOrders"); if(!box)return;
+  const sorted=orders.slice().sort((a,b)=>(Number(b.createdAtMs||0)-Number(a.createdAtMs||0))||String(b.id||"").localeCompare(String(a.id||"")));
+  const groups={review:[],running:[],done:[],expired:[]};
+  sorted.forEach(o=>groups[adminOrderGroup(o)].push(o));
+  const ids={review:"adminCountReview",running:"adminCountRunning",done:"adminCountDone",expired:"adminCountExpired"};
+  Object.keys(ids).forEach(k=>{const el=document.getElementById(ids[k]);if(el)el.textContent=num(groups[k].length)});
+  const labels={review:"در حال بررسی",running:"در حال انجام",done:"انجام‌شده",expired:"منقضی‌شده یا لغوشده"};
+  const list=groups[activeAdminOrderGroup]||[];
+  box.innerHTML=list.length?list.map(o=>orderHtml(o,true)).join(""):`<div class="admin-order-empty">${labels[activeAdminOrderGroup]} سفارشی ندارد.</div>`;
+}
+
 async function renderAdmin(){
   renderPriceManager();
   await renderDiscountManager();
-  const box=document.getElementById("adminOrders");
   const drafts=await captureScheduleDrafts();
-
-  if(!orders.length){
-    box.innerHTML="<div class=\"small\">هنوز سفارشی ثبت نشده است.</div>";
-  }else{
-    const sorted=orders.slice().sort((a,b)=>(Number(b.createdAtMs||0)-Number(a.createdAtMs||0)) || String(b.id||"").localeCompare(String(a.id||"")));
-    box.innerHTML=sorted.map(o=>orderHtml(o,true)).join("");
-    restoreScheduleDrafts(drafts);
-  }
+  renderAdminOrderGroups();
+  restoreScheduleDrafts(drafts);
 
   const legacyTotal=document.getElementById("kpiOrders");
   const legacyPending=document.getElementById("kpiPending");
@@ -1929,4 +2267,13 @@ body{background:radial-gradient(ellipse at 50% -10%,#351015 0,transparent 35%),l
 #orders .order{border:1px solid #34343b!important;background:linear-gradient(145deg,#19191f,#101014)!important;border-radius:17px!important;padding:15px!important;box-shadow:0 8px 24px #0004!important;overflow:hidden;position:relative}#orders .order:before{content:"";position:absolute;right:0;top:0;bottom:0;width:3px;background:#e3414f}#orders .order-head{border-bottom:1px solid #303038!important;padding-bottom:10px!important;margin-bottom:10px!important}#orders .order-head>b{color:#ff8a92!important}#orders .order-head .status{background:#26262d!important;color:#fff!important;border:1px solid #41414a}
 .customer-order-tracking{margin:12px 0;padding:13px;border:1px solid #34343c;border-radius:14px;background:linear-gradient(145deg,#131318,#0d0d11)}.tracking-topline{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}.tracking-topline>b{font-size:12px;color:#e8e8ed}.tracking-current{font-size:10px;padding:5px 9px;border-radius:99px;background:#14291f;color:#82e8b0;border:1px solid #27563c}.tracking-current.is-danger{background:#301216;color:#ff929a;border-color:#6d2730}.tracking-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;position:relative}.tracking-step{display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px;min-width:0;color:#81818c}.tracking-dot{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;border:1px solid #3d3d46;background:#202026;color:#aaaab4;font-size:10px;font-weight:900;z-index:1}.tracking-step small{font-size:9px;line-height:1.6}.tracking-step.done .tracking-dot{background:#17432d;border-color:#28744b;color:#9bf0bd}.tracking-step.current .tracking-dot{background:#701b26;border-color:#ed4a59;color:#fff;box-shadow:0 0 0 4px #ed4a5918}.tracking-step.current small,.tracking-step.done small{color:#e7e7ec}.tracking-schedule{display:flex;align-items:center;gap:10px;margin-top:14px;padding:10px;border-radius:10px;background:#1b1719;border:1px solid #3b292d}.tracking-schedule>span{font-size:22px;color:#ff737d}.tracking-schedule small,.tracking-schedule b{display:block}.tracking-schedule small{font-size:10px;color:#aaaab4;margin-bottom:4px}.tracking-schedule b{font-size:12px;color:#f2d4a1}.tracking-terminal-note{font-size:11px;line-height:1.8;color:#ff9aa2;padding:10px;background:#2a1216;border-radius:10px}
 @media(max-width:520px){.order-hero-strip,.tracking-heading{padding:13px;gap:10px}.order-hero-icon,.tracking-heading-icon{width:40px;height:40px;flex-basis:40px}.order-hero-strip .section-title,.tracking-heading .section-title{font-size:19px}.order-live-tag{font-size:0;padding:8px}.order-live-tag i{width:8px;height:8px}.order-step{flex-direction:column;gap:5px;padding:8px 3px;font-size:10px}.tracking-step small{font-size:8px}.tracking-dot{width:24px;height:24px}}
+
+/* Admin order status groups */
+.admin-order-status-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0 14px}
+.admin-order-status-tab{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0;padding:11px 12px;border:1px solid #3b4b3a;border-radius:12px;background:linear-gradient(145deg,#1b271e,#101710);color:#d8e3d3;font:inherit;font-size:12px;font-weight:850;cursor:pointer;transition:transform .18s,border-color .18s,background .18s}
+.admin-order-status-tab b{display:inline-flex;align-items:center;justify-content:center;min-width:25px;height:24px;padding:0 6px;border-radius:8px;background:#29372b;color:#f3f4e8;font-size:11px}
+.admin-order-status-tab.active{border-color:#a3b18a;background:linear-gradient(145deg,#3b4b2c,#202c1e);box-shadow:0 0 0 1px #a3b18a22,0 8px 18px #0003;color:#fff}
+.admin-order-status-tab:active{transform:scale(.98)}
+.admin-order-empty{padding:24px 14px;text-align:center;border:1px dashed #475447;border-radius:14px;color:#aab8a5;background:#111a12;font-size:13px}
+@media(min-width:650px){.admin-order-status-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}}
 </style>
