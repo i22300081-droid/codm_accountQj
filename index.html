@@ -7,12 +7,12 @@
 <title>CODM_ACCOUNTQ | سفارش تبلیغات</title>
 <style>
 :root{
-  --bg:#08080d;--card:#11111a;--card2:#171722;--line:#28283a;
-  --text:#f5f5fa;--muted:#a9a9bb;--primary:#8b5cf6;--primary2:#6d28d9;
-  --green:#22c55e;--red:#ef4444;--gold:#f59e0b;
+  --bg:#050b14;--card:#0b1625;--card2:#101f32;--line:#1e3854;
+  --text:#eff8ff;--muted:#9cb6ce;--primary:#168cff;--primary2:#0755bd;
+  --green:#22c55e;--red:#38bdf8;--gold:#f59e0b;
 }
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(circle at top,#1b1230 0,#08080d 38%);color:var(--text);font-family:Tahoma,Arial,sans-serif}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,#103b68 0,#071321 38%,#040810 78%);color:var(--text);font-family:Tahoma,Arial,sans-serif;overflow-x:hidden}
 button,input,textarea,select{font:inherit}
 .container{width:min(1100px,92%);margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(8,8,13,.88);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
@@ -22,7 +22,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(8,8,13,.88);backdrop-fil
 .btn{border:0;border-radius:13px;padding:12px 16px;cursor:pointer;color:white;background:linear-gradient(135deg,var(--primary),var(--primary2));font-weight:800}
 .btn.secondary{background:var(--card2);border:1px solid var(--line)}
 .btn.green{background:linear-gradient(135deg,#16a34a,#15803d)}
-.btn.red{background:linear-gradient(135deg,#dc2626,#991b1b)}
+.btn.red{background:linear-gradient(135deg,#0ea5e9,#991b1b)}
 .hero{padding:60px 0 35px;text-align:center}
 .badge{display:inline-block;padding:7px 12px;border:1px solid #4b327d;background:#171025;border-radius:99px;color:#cbb3ff;font-size:13px}
 .hero h1{font-size:clamp(30px,7vw,58px);margin:18px 0 12px}
@@ -69,7 +69,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-a
   --accent:#3b82f6;
   --accent2:#2563eb;
   --success:#16a34a;
-  --danger:#dc2626;
+  --danger:#0ea5e9;
   --shadow:0 14px 38px rgba(0,0,0,.22);
 }
 body{
@@ -438,26 +438,26 @@ textarea{line-height:1.8}
 
 
 <style id="codm-military-red-theme">
-:root{--bg:#08090b;--card:#111317;--card2:#191c21;--line:#34383e;--text:#f4f4f5;--muted:#a3a7ad;--primary:#e11d2e;--primary2:#8f101b;--green:#16a34a;--red:#ef233c;--gold:#f5b942;--border:#34383e;--accent:#ef233c;--accent2:#a30f20;--danger:#ef233c;--success:#22c55e;--shadow:0 14px 38px rgba(0,0,0,.42)}
+:root{--bg:#08090b;--card:#111317;--card2:#191c21;--line:#34383e;--text:#f4f4f5;--muted:#a3a7ad;--primary:#168cff;--primary2:#0755bd;--green:#16a34a;--red:#38bdf8;--gold:#f5b942;--border:#34383e;--accent:#38bdf8;--accent2:#0b63ce;--danger:#38bdf8;--success:#22c55e;--shadow:0 14px 38px rgba(0,0,0,.42)}
 body{background:radial-gradient(ellipse at 50% -15%,rgba(180,18,35,.22),transparent 48%),linear-gradient(180deg,#090a0c 0%,#101114 55%,#08090b 100%);color:var(--text)}
 header{background:rgba(8,9,11,.94);border-bottom:1px solid #3b2025}
-.brand span,.hero h1 span{color:#ff3348}
-.btn{background:linear-gradient(135deg,#f02b40,#8f101b);box-shadow:0 5px 18px rgba(225,29,46,.18)}
+.brand span,.hero h1 span{color:#60a5fa}
+.btn{background:linear-gradient(135deg,#f02b40,#0755bd);box-shadow:0 5px 18px rgba(225,29,46,.18)}
 .btn.secondary{background:linear-gradient(180deg,#1b1d21,#111215);border:1px solid #3b3d42}
 .btn.green{background:linear-gradient(135deg,#15803d,#166534)}
-.btn.red{background:linear-gradient(135deg,#ef233c,#8f101b)}
-.hero{background:linear-gradient(145deg,rgba(29,18,21,.97),rgba(13,14,16,.98));border-color:#51232a;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,transparent,#ef233c,#f5b942,#ef233c,transparent);opacity:.9}
-.badge{border-color:#6c2630;background:#241115;color:#ffb6be}
+.btn.red{background:linear-gradient(135deg,#38bdf8,#0755bd)}
+.hero{background:linear-gradient(145deg,rgba(29,18,21,.97),rgba(13,14,16,.98));border-color:#164e75;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,transparent,#38bdf8,#f5b942,#38bdf8,transparent);opacity:.9}
+.badge{border-color:#164e75;background:#0b1b2c;color:#bae6fd}
 .card,.order,.kpi,.modal-box{background:linear-gradient(160deg,rgba(24,26,30,.98),rgba(13,14,16,.98));border-color:#33363b;box-shadow:0 14px 38px rgba(0,0,0,.32)}
-.price,.total{color:#ff4557}
-input:focus,textarea:focus,select:focus{border-color:#ef233c;box-shadow:0 0 0 2px rgba(239,35,60,.12)}
-.notice{background:#211316;border-color:#51232a;color:#ffd8dc}
+.price,.total{color:#7dd3fc}
+input:focus,textarea:focus,select:focus{border-color:#38bdf8;box-shadow:0 0 0 2px rgba(56,189,248,.12)}
+.notice{background:#0b1b2c;border-color:#164e75;color:#ffd8dc}
 .status{background:#2a1c0c;color:#f8c56b}
-.section-title{position:relative;padding-right:12px;border-right:3px solid #ef233c}
-.order:hover,.card:hover{border-color:#71303a;transform:translateY(-2px);transition:transform .18s ease,border-color .18s ease}
-footer{border-top-color:#343035}
-::selection{background:#ef233c;color:#fff}
+.section-title{position:relative;padding-right:12px;border-right:3px solid #38bdf8}
+.order:hover,.card:hover{border-color:#2563a6;transform:translateY(-2px);transition:transform .18s ease,border-color .18s ease}
+footer{border-top-color:#26364c}
+::selection{background:#38bdf8;color:#fff}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
 </style>
 
@@ -466,48 +466,48 @@ footer{border-top-color:#343035}
 .admin-dashboard-kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin:12px 0}
 .admin-dashboard-kpis .kpi{min-width:0}
 .admin-dashboard-kpis .kpi b{font-size:23px;color:#ff5263;overflow-wrap:anywhere}
-#adminTab-dashboard .shortcut-card{background:linear-gradient(145deg,#1b1d22,#101114);border-color:#3b3034}
-#adminTab-dashboard .shortcut-card:hover{border-color:#ef233c;box-shadow:0 0 20px #ef233c18}
+#adminTab-dashboard .shortcut-card{background:linear-gradient(145deg,#1b1d22,#101114);border-color:#26364c}
+#adminTab-dashboard .shortcut-card:hover{border-color:#38bdf8;box-shadow:0 0 20px #38bdf818}
 #adminTab-dashboard .order{background:linear-gradient(145deg,#1a1c20,#101114)!important}
 @media(max-width:600px){.admin-dashboard-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-dashboard-kpis .kpi{padding:11px}.admin-dashboard-kpis .kpi b{font-size:20px}}
 </style>
 <style id="codm-cinematic-tactical-v5">
-:root{--tactical-red:#ef233c;--tactical-red-hot:#ff3348;--tactical-steel:#1a1d22;--tactical-line:rgba(239,35,60,.28);--tactical-glow:rgba(239,35,60,.18)}
+:root{--tactical-red:#38bdf8;--tactical-red-hot:#60a5fa;--tactical-steel:#1a1d22;--tactical-line:rgba(56,189,248,.28);--tactical-glow:rgba(56,189,248,.18)}
 html{scroll-behavior:smooth}
-body{background-color:#08090b!important;background-image:radial-gradient(ellipse at 50% -12%,rgba(239,35,60,.22),transparent 42%),radial-gradient(ellipse at 0% 45%,rgba(120,18,30,.10),transparent 32%),linear-gradient(180deg,#08090b 0%,#101114 48%,#07080a 100%)!important;position:relative;isolation:isolate}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.17;background-image:repeating-linear-gradient(135deg,transparent 0 38px,rgba(255,255,255,.025) 39px 40px,transparent 41px 78px),linear-gradient(90deg,transparent 49.8%,rgba(239,35,60,.05) 50%,transparent 50.2%);mask-image:linear-gradient(to bottom,black,transparent 88%)}
-header{border-bottom:1px solid rgba(239,35,60,.32)!important;box-shadow:0 8px 30px rgba(0,0,0,.28),0 1px 0 rgba(255,255,255,.025) inset!important}
-.brand{letter-spacing:.7px;text-shadow:0 0 22px rgba(239,35,60,.25)}
+body{background-color:#08090b!important;background-image:radial-gradient(ellipse at 50% -12%,rgba(56,189,248,.22),transparent 42%),radial-gradient(ellipse at 0% 45%,rgba(120,18,30,.10),transparent 32%),linear-gradient(180deg,#08090b 0%,#101114 48%,#07080a 100%)!important;position:relative;isolation:isolate}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.17;background-image:repeating-linear-gradient(135deg,transparent 0 38px,rgba(255,255,255,.025) 39px 40px,transparent 41px 78px),linear-gradient(90deg,transparent 49.8%,rgba(56,189,248,.05) 50%,transparent 50.2%);mask-image:linear-gradient(to bottom,black,transparent 88%)}
+header{border-bottom:1px solid rgba(56,189,248,.32)!important;box-shadow:0 8px 30px rgba(0,0,0,.28),0 1px 0 rgba(255,255,255,.025) inset!important}
+.brand{letter-spacing:.7px;text-shadow:0 0 22px rgba(56,189,248,.25)}
 .brand span{color:#ff3b50!important}
-.hero{isolation:isolate;overflow:hidden;position:relative;border:1px solid rgba(239,35,60,.34)!important;background:linear-gradient(125deg,rgba(37,17,22,.97),rgba(15,16,19,.97) 55%,rgba(28,17,21,.96))!important;box-shadow:0 25px 70px rgba(0,0,0,.42),0 0 45px rgba(239,35,60,.07),inset 0 1px 0 rgba(255,255,255,.06)!important}
-.hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(239,35,60,.035) 23px 24px,transparent 25px 46px),radial-gradient(ellipse at 12% 10%,rgba(255,51,72,.18),transparent 36%);animation:tacticalSweep 11s ease-in-out infinite alternate}
-.hero:before{content:"";position:absolute;top:0;left:7%;right:7%;height:2px;background:linear-gradient(90deg,transparent,#ef233c 25%,#ff6675 50%,#ef233c 75%,transparent);box-shadow:0 0 18px rgba(239,35,60,.7);animation:tacticalPulse 3.6s ease-in-out infinite}
+.hero{isolation:isolate;overflow:hidden;position:relative;border:1px solid rgba(56,189,248,.34)!important;background:linear-gradient(125deg,rgba(37,17,22,.97),rgba(15,16,19,.97) 55%,rgba(28,17,21,.96))!important;box-shadow:0 25px 70px rgba(0,0,0,.42),0 0 45px rgba(56,189,248,.07),inset 0 1px 0 rgba(255,255,255,.06)!important}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(56,189,248,.035) 23px 24px,transparent 25px 46px),radial-gradient(ellipse at 12% 10%,rgba(255,51,72,.18),transparent 36%);animation:tacticalSweep 11s ease-in-out infinite alternate}
+.hero:before{content:"";position:absolute;top:0;left:7%;right:7%;height:2px;background:linear-gradient(90deg,transparent,#38bdf8 25%,#93c5fd 50%,#38bdf8 75%,transparent);box-shadow:0 0 18px rgba(56,189,248,.7);animation:tacticalPulse 3.6s ease-in-out infinite}
 .hero h1{text-shadow:0 5px 25px rgba(0,0,0,.45)}
-.hero h1 span{color:#ff4358!important;text-shadow:0 0 24px rgba(239,35,60,.22)}
+.hero h1 span{color:#ff4358!important;text-shadow:0 0 24px rgba(56,189,248,.22)}
 .card,.order,.kpi,.schedule-day,.leaderboard-row,.modal-box{transition:transform .28s cubic-bezier(.2,.75,.25,1),border-color .28s,box-shadow .28s!important}
 .card,.order,.kpi,.schedule-day,.leaderboard-row{position:relative;overflow:hidden}
-.card:after,.kpi:after{content:"";position:absolute;top:0;right:14px;width:42px;height:2px;background:linear-gradient(90deg,transparent,#ef233c,transparent);opacity:.65;pointer-events:none}
-.card:hover,.order:hover,.kpi:hover,.leaderboard-row:hover{transform:translateY(-3px)!important;border-color:rgba(239,35,60,.48)!important;box-shadow:0 20px 48px rgba(0,0,0,.38),0 0 24px rgba(239,35,60,.08)!important}
+.card:after,.kpi:after{content:"";position:absolute;top:0;right:14px;width:42px;height:2px;background:linear-gradient(90deg,transparent,#38bdf8,transparent);opacity:.65;pointer-events:none}
+.card:hover,.order:hover,.kpi:hover,.leaderboard-row:hover{transform:translateY(-3px)!important;border-color:rgba(56,189,248,.48)!important;box-shadow:0 20px 48px rgba(0,0,0,.38),0 0 24px rgba(56,189,248,.08)!important}
 .btn{position:relative;isolation:isolate;overflow:hidden;transition:transform .22s ease,filter .22s ease,box-shadow .22s ease!important}
-.btn:not(.secondary):not(.red){background:linear-gradient(115deg,#ff3348 0%,#c5162a 48%,#7d101b 100%)!important;color:#fff!important;border-color:rgba(255,120,135,.35)!important;box-shadow:0 8px 22px rgba(180,18,35,.18),inset 0 1px 0 rgba(255,255,255,.18)!important}
+.btn:not(.secondary):not(.red){background:linear-gradient(115deg,#60a5fa 0%,#c5162a 48%,#7d101b 100%)!important;color:#fff!important;border-color:rgba(255,120,135,.35)!important;box-shadow:0 8px 22px rgba(180,18,35,.18),inset 0 1px 0 rgba(255,255,255,.18)!important}
 .btn:not(.secondary):not(.red):before{content:"";position:absolute;top:-40%;bottom:-40%;left:-60%;width:34%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.23),transparent);z-index:-1;animation:buttonShine 6s ease-in-out infinite}
-.btn:hover{filter:brightness(1.08);box-shadow:0 10px 28px rgba(239,35,60,.20)!important}
+.btn:hover{filter:brightness(1.08);box-shadow:0 10px 28px rgba(56,189,248,.20)!important}
 .btn:active{transform:scale(.975)!important}
-input:focus,select:focus,textarea:focus{border-color:rgba(239,35,60,.78)!important;box-shadow:0 0 0 3px rgba(239,35,60,.12),0 0 18px rgba(239,35,60,.06)!important}
+input:focus,select:focus,textarea:focus{border-color:rgba(56,189,248,.78)!important;box-shadow:0 0 0 3px rgba(56,189,248,.12),0 0 18px rgba(56,189,248,.06)!important}
 .status-running,.leaderboard-row.status-running .leaderboard-status{box-shadow:0 0 18px rgba(245,185,66,.08)}
 .order-hero-strip{position:relative;overflow:hidden}
-.order-hero-strip:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 20%,rgba(239,35,60,.06) 50%,transparent 80%);transform:translateX(-100%);animation:stripSweep 9s ease-in-out infinite}
-.bottom-nav{border-color:rgba(239,35,60,.32)!important;box-shadow:0 20px 55px rgba(0,0,0,.58),0 0 24px rgba(239,35,60,.07)!important;animation:navFloat 5.5s ease-in-out infinite}
-.bottom-nav-btn.order{border-color:rgba(239,35,60,.42)!important;background:linear-gradient(135deg,rgba(239,35,60,.25),rgba(55,15,21,.52))!important}
-.bottom-nav-btn.order:hover{box-shadow:0 0 22px rgba(239,35,60,.16)!important}
-.section-title{border-right-color:#ef233c!important}
-::selection{background:#ef233c;color:#fff}
+.order-hero-strip:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 20%,rgba(56,189,248,.06) 50%,transparent 80%);transform:translateX(-100%);animation:stripSweep 9s ease-in-out infinite}
+.bottom-nav{border-color:rgba(56,189,248,.32)!important;box-shadow:0 20px 55px rgba(0,0,0,.58),0 0 24px rgba(56,189,248,.07)!important;animation:navFloat 5.5s ease-in-out infinite}
+.bottom-nav-btn.order{border-color:rgba(56,189,248,.42)!important;background:linear-gradient(135deg,rgba(56,189,248,.25),rgba(55,15,21,.52))!important}
+.bottom-nav-btn.order:hover{box-shadow:0 0 22px rgba(56,189,248,.16)!important}
+.section-title{border-right-color:#38bdf8!important}
+::selection{background:#38bdf8;color:#fff}
 @keyframes tacticalSweep{0%{transform:translateX(-1.5%) scale(1);opacity:.65}100%{transform:translateX(1.5%) scale(1.025);opacity:1}}
 @keyframes tacticalPulse{0%,100%{opacity:.55;filter:brightness(.9)}50%{opacity:1;filter:brightness(1.3)}}
 @keyframes buttonShine{0%,70%,100%{left:-60%}82%{left:130%}}
 @keyframes stripSweep{0%,65%,100%{transform:translateX(-100%)}82%{transform:translateX(100%)}}
 @keyframes navFloat{0%,100%{translate:0 0}50%{translate:0 -3px}}
-@media(max-width:600px){.hero{box-shadow:0 18px 45px rgba(0,0,0,.4),0 0 26px rgba(239,35,60,.06)!important}.bottom-nav{animation:none}}
+@media(max-width:600px){.hero{box-shadow:0 18px 45px rgba(0,0,0,.4),0 0 26px rgba(56,189,248,.06)!important}.bottom-nav{animation:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 
@@ -862,6 +862,130 @@ input:focus,textarea:focus,select:focus{border-color:#ffb45f!important;box-shado
 }
 </style>
 
+\n<style id="snapdragon8elite-performance-mode">
+/* Performance-tuned mode: preserve neon perimeter colors and motion, reduce expensive glow work. */
+@media (prefers-reduced-motion: no-preference) {
+  .card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,
+  .schedule-day::after,.leaderboard-row::after,.reservation-board::after,
+  .order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,
+  .admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,
+  .discount-create-card::after,.discount-list-item::after,.name-modal::after,
+  .shamsi-box::after,.price-card::before,.price-card::after,
+  .price-card-item::before,.price-card-item::after,.pricing-card::before,
+  .pricing-card::after,.pricing-plan::before,.pricing-plan::after,
+  .price-package::before,.price-package::after,.service-price-card::before,
+  .service-price-card::after,.product-price-card::before,.product-price-card::after {
+    animation-duration: 7.4s !important;
+    animation-timing-function: linear !important;
+  }
+}
+/* Keep the traveling edge visible, but avoid stacking multiple costly shadow filters. */
+.card::after,.order::after,.hero::after,.modal-box::after,.kpi::after,
+.schedule-day::after,.leaderboard-row::after,.reservation-board::after,
+.order-hero-strip::after,.tracking-heading::after,.customer-order-tracking::after,
+.admin-order-status-tab::after,.shortcut-card::after,.price-editor::after,
+.discount-create-card::after,.discount-list-item::after,.name-modal::after,
+.shamsi-box::after,.price-card::before,.price-card::after,
+.price-card-item::before,.price-card-item::after,.pricing-card::before,
+.pricing-card::after,.pricing-plan::before,.pricing-plan::after,
+.price-package::before,.price-package::after,.service-price-card::before,
+.service-price-card::after,.product-price-card::before,.product-price-card::after {
+  filter: drop-shadow(0 0 2px rgba(108,220,255,.42)) !important;
+}
+/* Avoid forcing every card onto its own GPU layer; keep transforms smooth on interaction. */
+.card,.order,.hero,.modal-box,.kpi,.schedule-day,.leaderboard-row,
+.reservation-board,.shortcut-card,.price-card,.price-card-item,
+.pricing-card,.pricing-plan,.price-package,.service-price-card,
+.product-price-card { will-change: auto; }
+@media (max-width: 700px) {
+  .card,.order,.hero,.modal-box,.kpi,.schedule-day,.leaderboard-row,
+  .reservation-board,.shortcut-card,.price-card,.price-card-item,
+  .pricing-card,.pricing-plan,.price-package,.service-price-card,
+  .product-price-card { box-shadow: 0 5px 16px rgba(0,0,0,.24); }
+}
+</style>
+
+<style id="compact-admin-orders-low-lag">
+/* Compact order cards and lighter admin rendering */
+#adminOrders .order,#orders .order,.admin-panel .order{padding:9px!important;margin:0!important;border-radius:11px!important;box-shadow:0 3px 10px #0003!important;background:#121218!important}
+#adminOrders .order:before,#orders .order:before{width:2px!important}
+#adminOrders .order-head,#orders .order-head{gap:6px!important;padding-bottom:6px!important;margin-bottom:6px!important;font-size:11px!important}
+#adminOrders .order p,#adminOrders .order div,#adminOrders .order label,#adminOrders .order span,#adminOrders .order small,#orders .order p,#orders .order div,#orders .order label,#orders .order span,#orders .order small{line-height:1.5}
+#adminOrders .order p,#orders .order p{font-size:11px!important;margin:5px 0!important;overflow-wrap:anywhere}
+#adminOrders .order .status,#orders .order .status{font-size:9px!important;padding:3px 6px!important}
+#adminOrders .order .btn,#adminOrders .order button,#orders .order .btn,#orders .order button{font-size:10px!important;padding:7px 9px!important;border-radius:8px!important;box-shadow:none!important;transition:none!important}
+#adminOrders .order .actions,#orders .order .actions{gap:5px!important;margin-top:7px!important}
+#adminOrders .order input,#adminOrders .order textarea,#adminOrders .order select{font-size:11px!important;padding:8px!important;border-radius:8px!important}
+.admin-order-status-tabs{gap:6px!important;margin:8px 0 10px!important}
+.admin-order-status-tab{padding:8px 9px!important;font-size:10px!important;transition:none!important;box-shadow:none!important}
+.admin-order-status-tab b{min-width:21px!important;height:21px!important;font-size:10px!important}
+.admin-order-empty{padding:14px 10px!important;font-size:11px!important}
+.admin-panel .card,.admin-panel .kpi,.admin-panel .modal-box{box-shadow:0 3px 10px #0003!important}
+.admin-panel .kpi{padding:9px!important;border-radius:10px!important}
+.admin-panel .kpi b{font-size:18px!important}
+.admin-panel .btn{transition:none!important}
+header{backdrop-filter:none!important}
+@media(max-width:520px){#adminOrders .order,#orders .order{padding:8px!important}#adminOrders .order .actions,#orders .order .actions{gap:4px!important}.admin-order-status-tab{padding:7px!important}}
+</style>
+
+
+<style id="codm-blue-cinematic-upgrade">
+:root{--primary:#168cff!important;--primary2:#0755bd!important;--line:#1e3854!important}
+header{background:rgba(4,10,18,.88)!important;border-bottom-color:#1b4b78!important;box-shadow:0 8px 28px #0005}
+.brand span,.hero h1 span{color:#4bb6ff!important}
+.btn{background:linear-gradient(135deg,#168cff,#0755bd)!important;box-shadow:0 5px 18px #087bff26;transition:transform .2s,box-shadow .2s,filter .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #087bff48;filter:brightness(1.08)}
+.card,.order-wrap,.section-title,.order-hero-strip{animation:codmRise .55s both}
+.card{border-color:#1a3855!important;box-shadow:0 12px 32px #0003}
+input:focus,textarea:focus,select:focus{outline:1px solid #269dff!important;box-shadow:0 0 0 3px #168cff20!important}
+@keyframes codmRise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#codmNotificationDock{position:fixed;right:14px;top:14px;z-index:9998;direction:rtl;font-family:Tahoma,Arial,sans-serif}
+#codmNotificationBell{width:46px;height:46px;border:1px solid #244d70;border-radius:14px;background:linear-gradient(145deg,#10263b,#07111d);color:#8fd0ff;box-shadow:0 7px 22px #0007,inset 0 1px 0 #ffffff0b;cursor:pointer;position:relative;display:flex;align-items:center;justify-content:center;transition:transform .18s ease,border-color .18s ease,background .18s ease}#codmNotificationBell:hover{border-color:#299cff;background:linear-gradient(145deg,#123653,#081522);transform:translateY(-1px)}#codmNotificationBell:active{transform:scale(.96)}#codmNotificationBell svg{width:21px;height:21px;display:block;filter:drop-shadow(0 0 5px #168cff35)}
+#codmNotificationCount{position:absolute;top:-5px;right:-5px;min-width:17px;height:17px;border:2px solid #071321;border-radius:7px;background:#ff4655;color:#fff;font-size:9px;font-weight:900;display:none;align-items:center;justify-content:center;padding:0 3px;box-shadow:0 2px 8px #ff465555}
+#codmNotificationPanel{display:none;position:absolute;right:0;top:58px;bottom:auto;width:min(340px,calc(100vw - 28px));max-height:55vh;overflow:auto;background:#071321;border:1px solid #24537a;border-radius:17px;padding:12px;box-shadow:0 20px 55px #000b}
+#codmNotificationPanel.open{display:block;animation:codmRise .2s both}
+.codm-notif-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:9px;font-weight:900;color:#dff2ff}
+.codm-notif-clear{border:1px solid #285477;background:#0d2238;color:#b9e3ff;border-radius:8px;padding:6px 8px;font-size:11px}
+.codm-notif-item{padding:10px;margin:7px 0;border-radius:11px;background:#0b1e31;border:1px solid #1b3d5c;font-size:12px;line-height:1.8;color:#dceeff}
+.codm-notif-item small{display:block;color:#7fa8c9;font-size:10px}
+#codmToast{position:fixed;top:82px;left:50%;transform:translateX(-50%);z-index:10000;display:none;max-width:calc(100vw - 28px);padding:12px 16px;border:1px solid #2586d0;border-radius:13px;background:#071a2c;color:#e9f7ff;box-shadow:0 10px 30px #0008;font-size:12px}
+#codmToast.show{display:block;animation:codmRise .25s both}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+
+
+<style id="blue-black-yellow-low-lag">
+:root{
+ --bg:#050b18!important;--card:#0a1730!important;--card2:#102344!important;
+ --line:rgba(48,139,255,.42)!important;--primary:#168cff!important;--primary2:#0755bd!important;
+ --accent:#f5c542!important;--gold:#f5c542!important;--text:#edf5ff!important;--muted:#a7bedb!important;
+ --shadow:0 8px 24px rgba(0,0,0,.32)!important;
+}
+html{background:#050b18!important}
+body{background:linear-gradient(180deg,#071a35 0%,#050d1b 52%,#030711 100%)!important;color:#edf5ff!important}
+header{background:rgba(5,14,29,.96)!important;border-bottom:1px solid rgba(35,137,255,.45)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.brand span,.hero h1 span,.price,.total,.leaderboard-rank{color:#f5c542!important}
+.hero,.card,.order,.modal-box,.notice,.schedule-day,.leaderboard-row,.kpi,.shamsi-box{
+ background:linear-gradient(145deg,rgba(13,36,69,.98),rgba(5,15,31,.98))!important;
+ border:1px solid rgba(40,137,255,.48)!important;
+ box-shadow:0 0 0 1px rgba(20,105,220,.10),0 0 14px rgba(0,112,255,.12),0 8px 22px rgba(0,0,0,.28)!important;
+ backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+}
+.section-title,.hero h1{color:#edf5ff!important}
+.badge,.notice{border-color:rgba(245,197,66,.42)!important}
+.btn{background:linear-gradient(135deg,#167ce8,#084ca8)!important;color:#fff!important;border:1px solid rgba(65,157,255,.62)!important;box-shadow:0 0 10px rgba(0,119,255,.16),0 5px 14px rgba(0,0,0,.22)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.btn:not(.secondary):not(.red){background:linear-gradient(135deg,#f5c542,#d99b16)!important;color:#101827!important;border-color:rgba(255,224,119,.65)!important}
+.btn.secondary,.bottom-nav-btn{background:linear-gradient(135deg,#102b50,#09172b)!important;color:#edf5ff!important;border:1px solid rgba(44,133,240,.48)!important}
+.btn.red{background:linear-gradient(135deg,#c83242,#7f1626)!important}
+.bottom-nav{background:rgba(4,12,25,.98)!important;border:1px solid rgba(40,137,255,.48)!important;box-shadow:0 0 15px rgba(0,112,255,.13),0 10px 26px rgba(0,0,0,.42)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.bottom-nav-btn.order{background:linear-gradient(135deg,#f5c542,#c88c12)!important;color:#101827!important}
+.bottom-nav-btn.leader{background:linear-gradient(135deg,#123d70,#0b1b33)!important}
+input,select,textarea{background:#061329!important;color:#edf5ff!important;border-color:rgba(48,139,255,.42)!important;box-shadow:none!important}
+input:focus,select:focus,textarea:focus{border-color:#f5c542!important;box-shadow:0 0 0 2px rgba(245,197,66,.13)!important}
+/* کاهش لگ: حذف بلورهای سنگین و انیمیشن‌های غیرضروری؛ درخشش دور کادرها حفظ شده است. */
+*{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.12s!important}
+@media(max-width:600px){.hero{padding-top:32px!important}.card{padding:15px!important}}
+</style>
 </head>
 <body>
 
@@ -980,6 +1104,7 @@ input:focus,textarea:focus,select:focus{border-color:#ffb45f!important;box-shado
     <button type="button" class="admin-tab active" data-tab="orders" onclick="showAdminTab('orders')">📦 سفارش‌ها</button>
     <button type="button" class="admin-tab" data-tab="discounts" onclick="showAdminTab('discounts')">🎟️ تخفیف‌ها</button>
     <button type="button" class="admin-tab" data-tab="prices" onclick="showAdminTab('prices')">💰 تعرفه‌ها</button>
+     <button type="button" class="admin-tab" data-tab="notifications" onclick="showAdminTab('notifications')">🔔 ارسال اعلان</button>
   </div>
   <div id="adminTab-dashboard" class="admin-tab-panel active">
     <div class="admin-section-intro"><h3>مرکز فرماندهی</h3><p class="small">نمای سریع وضعیت سفارش‌ها و میانبرهای مدیریت.</p></div>
@@ -1029,6 +1154,11 @@ input:focus,textarea:focus,select:focus{border-color:#ffb45f!important;box-shado
   <div id="adminTab-prices" class="admin-tab-panel">
     <div class="admin-section-intro"><h3>💰 مدیریت تعرفه‌ها</h3><p class="small">قیمت هر پکیج را تغییر بده و در پایان ذخیره کن.</p></div>
     <div id="priceManager" class="orders"></div><button class="btn" style="margin-top:12px" onclick="savePrices()">ذخیره تغییرات قیمت‌ها</button>
+  </div>
+  <div id="adminTab-notifications" class="admin-tab-panel">
+    <div class="admin-section-intro"><h3>🔔 ارسال اعلان برای مشتری‌ها</h3><p class="small">عنوان و متن اعلان را بنویس و برای کاربران منتشر کن.</p></div>
+    <div class="card discount-create-card"><label for="adminNotificationTitle">عنوان اعلان</label><input id="adminNotificationTitle" maxlength="90" placeholder="مثلاً اطلاعیه مهم سایت"><label for="adminNotificationBody">متن اعلان</label><textarea id="adminNotificationBody" rows="4" maxlength="700" placeholder="متن پیام برای مشتری‌ها..."></textarea><button type="button" class="btn" onclick="publishAdminNotification()">🔔 انتشار اعلان برای همه مشتری‌ها</button><div id="adminNotificationMessage" class="small" style="margin-top:10px"></div></div>
+    <h3 style="margin-top:20px">اعلان‌های اخیر</h3><div id="adminNotificationHistory" class="orders"></div>
   </div>
 </section>
 
@@ -1096,7 +1226,7 @@ input:focus,textarea:focus,select:focus{border-color:#ffb45f!important;box-shado
     <p class="small">برای مدیریت، با حساب مدیر وارد شوید.</p>
     <input id="adminEmail" type="email" placeholder="ایمیل مدیر">
     <input id="adminPass" type="password" placeholder="رمز ورود مدیر">
-    <div id="adminError" class="small" style="color:#ef4444;margin-top:10px"></div>
+    <div id="adminError" class="small" style="color:#38bdf8;margin-top:10px"></div>
     <div class="actions">
       <button type="button" class="btn" onclick="window.loginAdmin()">ورود</button>
       <button type="button" class="btn secondary" onclick="window.closeAdmin()">لغو</button>
@@ -1109,8 +1239,8 @@ input:focus,textarea:focus,select:focus{border-color:#ffb45f!important;box-shado
 <script>
 const SUPABASE_URL="https://wrzpposaqjbksgunkxqh.supabase.co";
 const SUPABASE_KEY="sb_publishable_lOLpHug6vDnEEi2Wfn5PRQ_obC5bKK6";
-const ADMIN_EMAIL="i22300081@gmail.com";
-let firebaseReady=false,currentUser=null,orders=[],pollTimer=null,lastPaymentOrder="",adminMode=false,pricingSaveInProgress=false,appliedDiscount=null,activeAdminTab="orders";
+const ADMIN_EMAIL="i22300081@gmail.com";window.ADMIN_EMAIL=ADMIN_EMAIL;
+let firebaseReady=false,currentUser=null,orders=[],pollTimer=null,lastPaymentOrder="",adminMode=false,pricingSaveInProgress=false,appliedDiscount=null,activeAdminTab="orders";window.currentUser=currentUser;window.adminMode=adminMode;
 let services=[
 {id:1,name:"تبلیغ عادی بدون ریپلای",price:75000,reply:false},{id:2,name:"تبلیغ عادی با ریپلای دلخواه",price:100000,reply:true},{id:3,name:"پست آخر ۱۲ ساعته بدون ریپلای",price:135000,reply:false},{id:4,name:"پست آخر ۱۲ ساعته با ریپلای دلخواه",price:167000,reply:true},{id:5,name:"پست آخر با سنجاق ۱۲ ساعت بدون ریپلای",price:150000,reply:false},{id:6,name:"پست آخر با سنجاق و ریپلای دلخواه ۱۲ ساعته",price:180000,reply:true},{id:7,name:"تبلیغ ۱۲ ساعت عادی بدون ریپلای",price:90000,reply:false},{id:8,name:"تبلیغ ۲۴ ساعت عادی بدون ریپلای",price:120000,reply:false},{id:9,name:"تبلیغ ۲۴ ساعت با ریپلای دلخواه",price:150000,reply:true},{id:10,name:"تبلیغ ۲۴ ساعته با سنجاق بدون ریپلای",price:180000,reply:false},{id:11,name:"تبلیغ ۲۴ ساعته با ریپلای و سنجاق",price:250000,reply:true},{id:12,name:"تبلیغ ۲۴ ساعته بدون سنجاق با ریپلای",price:190000,reply:true}
 ];
@@ -1118,6 +1248,13 @@ const toman=n=>new Intl.NumberFormat("en-US").format(Number(n||0))+" تومان"
 const num=n=>new Intl.NumberFormat("en-US").format(Number(n||0));
 const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 function copyTextSafe(text,message="کپی شد."){const t=document.createElement("textarea");t.value=text;t.style.position="fixed";t.style.opacity="0";document.body.appendChild(t);t.focus();t.select();try{document.execCommand("copy");alert("✅ "+message)}catch(e){alert(text)}t.remove()}
+function copyOrderField(id,field){
+  const order=orders.find(x=>String(x.id)===String(id));
+  if(!order){alert("سفارش پیدا نشد.");return;}
+  const value=field==="reply"?order.reply:order.text;
+  if(!String(value||"").trim()){alert(field==="reply"?"برای این سفارش ریپلای ثبت نشده است.":"متن تبلیغ خالی است.");return;}
+  copyTextSafe(String(value),field==="reply"?"ریپلای کپی شد.":"متن تبلیغ کپی شد.");
+}
 function copyCard(){copyTextSafe("6219861352892391","شماره کارت کپی شد.")}
 function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth"})}
 function renderServices(){const g=document.getElementById("tariffGrid"),s=document.getElementById("service");g.innerHTML="";s.innerHTML='<option value="">انتخاب کنید...</option>';services.forEach(x=>{g.innerHTML+=`<div class="card tariff"><div><div class="small">پکیج تبلیغاتی</div><h3>${esc(x.name)}</h3></div><div><div class="price">${toman(x.price)}</div><button class="btn" onclick="choose(${x.id})">انتخاب این پکیج</button></div></div>`;s.innerHTML+=`<option value="${x.id}">${esc(x.name)} — ${toman(x.price)}</option>`});s.onchange=updateTotal;updateTotal()}
@@ -1161,9 +1298,20 @@ function saveSession(){if(currentUser?.refreshToken)localStorage.setItem("codm_s
 function clearSession(){localStorage.removeItem("codm_supabase_session")}
 async function signInEmail(email,password){const d=await sbAuthFetch("token?grant_type=password",{method:"POST",body:JSON.stringify({email,password})});currentUser={uid:d.user?.id||d.user_id,email:d.user?.email||email,accessToken:d.access_token,refreshToken:d.refresh_token||""};saveSession();return currentUser}
 async function refreshSupabaseToken(refreshToken){const d=await sbAuthFetch("token?grant_type=refresh_token",{method:"POST",body:JSON.stringify({refresh_token:refreshToken})});currentUser={uid:d.user?.id||d.user_id,email:d.user?.email||null,accessToken:d.access_token,refreshToken:d.refresh_token||refreshToken};saveSession();return currentUser}
-async function signInAnonymous(){let saved=null;try{saved=JSON.parse(localStorage.getItem("codm_supabase_session")||"null")}catch(e){}if(saved?.refreshToken){try{return await refreshSupabaseToken(saved.refreshToken)}catch(e){clearSession()}}const d=await sbAuthFetch("signup",{method:"POST",body:JSON.stringify({})});if(!d.access_token)throw new Error("ANONYMOUS_AUTH_NOT_ENABLED");currentUser={uid:d.user?.id,email:d.user?.email||null,accessToken:d.access_token,refreshToken:d.refresh_token||""};saveSession();return currentUser}
-function syncCustomerOrdersSection(){const section=document.getElementById("myOrders");if(section)section.classList.toggle("hidden",!!adminMode)}
-function signOut(){adminMode=false;syncCustomerOrdersSection();currentUser=null;clearSession();stopPolling();document.getElementById("admin").classList.remove("show");orders=[];renderOrders()}
+async function signInAnonymous(){let saved=null;try{saved=JSON.parse(localStorage.getItem("codm_supabase_session")||"null")}catch(e){}if(saved?.refreshToken){try{return await refreshSupabaseToken(saved.refreshToken)}catch(e){clearSession()}}const d=await sbAuthFetch("signup",{method:"POST",body:JSON.stringify({})});if(!d.access_token)throw new Error("ANONYMOUS_AUTH_NOT_ENABLED");currentUser={uid:d.user?.id,email:d.user?.email||null,accessToken:d.access_token,refreshToken:d.refresh_token||""};window.currentUser=currentUser;saveSession();return currentUser}
+function syncCustomerOrdersSection(){
+  // Hide customer-facing order sections only while the admin is logged in.
+  const section=document.getElementById("myOrders");
+  if(section)section.classList.toggle("hidden",!!adminMode);
+  const orderSection=document.getElementById("order");
+  if(orderSection)orderSection.classList.toggle("hidden",!!adminMode);
+  document.querySelectorAll(".bottom-nav-btn.order").forEach(button=>button.classList.toggle("hidden",!!adminMode));
+  // Public tariffs remain hidden only while the admin is logged in.
+  const tariffsSection=document.getElementById("tariffs");
+  if(tariffsSection)tariffsSection.classList.toggle("hidden",!!adminMode);
+  document.querySelectorAll('button[onclick="scrollToId(\'tariffs\')"]').forEach(button=>button.classList.toggle("hidden",!!adminMode));
+}
+function signOut(){adminMode=false;window.adminMode=adminMode;syncCustomerOrdersSection();currentUser=null;window.currentUser=null;clearSession();stopPolling();document.getElementById("admin").classList.remove("show");orders=[];renderOrders()}
 function authErrorMessage(code){const map={invalid_credentials:"ایمیل یا رمز ورود مدیر اشتباه است.",email_not_confirmed:"ایمیل مدیر هنوز تأیید نشده است.",user_not_found:"حساب مدیر پیدا نشد.",anonymous_provider_disabled:"ورود مهمان در Supabase فعال نیست.",ANONYMOUS_AUTH_NOT_ENABLED:"ورود مهمان در Supabase فعال نیست."};return map[code]||("خطای ورود: "+code)}
 async function sbFetch(path,options={}){if(!currentUser?.accessToken)throw new Error("NOT_AUTHENTICATED");const r=await fetch(`${SUPABASE_URL}/rest/v1/${path}`,{...options,headers:sbHeaders(options.headers||{})});const d=await r.json().catch(()=>null);if(!r.ok){const e=new Error(d?.message||d?.msg||d?.hint||d?.error||`HTTP ${r.status}`);e.httpStatus=r.status;throw e}return d}
 function fromDbOrder(x){const raw=String(x.ad_text||"");const marker="\n[[AD_IMAGE_DATAURL:";const at=raw.lastIndexOf(marker);const imageData=at>=0&&raw.endsWith("]]" )?raw.slice(at+marker.length,-2):"";const text=at>=0?raw.slice(0,at):raw;const createdAtMs=x.created_at?new Date(x.created_at).getTime():0;let status=x.status||"در انتظار پرداخت";if(status==="در انتظار پرداخت"&&createdAtMs&&Date.now()-createdAtMs>=10*60*1000)status="منقضی‌شده";return{id:x.id,uid:x.uid,service:x.service,price:Number(x.price||0),rubika:x.rubika,name:x.name,text,imageData,scheduleDate:x.schedule_date||"",scheduleTime:String(x.schedule_time||"").slice(0,5),reply:x.reply||"",status,rawStatus:x.status||"در انتظار پرداخت",createdAtMs,createdAt:x.created_at?new Date(x.created_at).toLocaleString("fa-IR"):""}}
@@ -1177,7 +1325,7 @@ async function updateOrderStatus(id,status){
   return d[0];
 }
 async function deleteOrder(id){if(!adminMode||currentUser?.email!==ADMIN_EMAIL)throw new Error("ADMIN_ONLY");await sbFetch(`orders?id=eq.${encodeURIComponent(id)}`,{method:"DELETE"})}
-async function refreshOrders(showError=false){try{orders=await getOrders();renderOrders();syncPaymentVisibility();if(adminMode&&currentUser?.email===ADMIN_EMAIL&&!pricingSaveInProgress)await renderAdmin()}catch(e){console.error("Supabase:",e);if(showError)alert("خواندن سفارش‌ها انجام نشد.\n"+(e.message||"خطای سیستم"))}}
+async function refreshOrders(showError=false){try{orders=await getOrders();if(window.codmTrackOrderChanges)window.codmTrackOrderChanges(orders);renderOrders();syncPaymentVisibility();if(adminMode&&currentUser?.email===ADMIN_EMAIL&&!pricingSaveInProgress)await renderAdmin()}catch(e){console.error("Supabase:",e);if(showError)alert("خواندن سفارش‌ها انجام نشد.\n"+(e.message||"خطای سیستم"))}}
 function startPolling(){stopPolling();refreshOrders();pollTimer=setInterval(()=>refreshOrders(false),5000)}
 function stopPolling(){if(pollTimer){clearInterval(pollTimer);pollTimer=null}}
 async function ensureCustomerAuth(){if(currentUser?.accessToken)return true;try{await signInAnonymous();return!!currentUser?.accessToken}catch(e){console.error("Customer Supabase auth:",e);alert("اتصال به سرویس برقرار نشد.\n"+authErrorMessage(e.code||e.message||"UNKNOWN_ERROR"));return false}}
@@ -1195,7 +1343,7 @@ function renderPaymentCountdown(){
   }
   const remaining=Math.max(0,10*60*1000-(Date.now()-o.createdAtMs));
   const mm=String(Math.floor(remaining/60000)).padStart(2,"0"),ss=String(Math.floor((remaining%60000)/1000)).padStart(2,"0");
-  targets.forEach(el=>{el.textContent=`⏳ زمان باقی‌مانده برای پرداخت: ${mm}:${ss}`;el.style.color=remaining<=60000?"#f87171":"#fbbf24"});
+  targets.forEach(el=>{el.textContent=`⏳ زمان باقی‌مانده برای پرداخت: ${mm}:${ss}`;el.style.color=remaining<=60000?"#7dd3fc":"#fbbf24"});
   if(remaining<=0&&!paymentExpiryRefreshTriggered){paymentExpiryRefreshTriggered=true;refreshOrders(false);}
 }
 function startPaymentCountdown(){if(paymentCountdownInterval)clearInterval(paymentCountdownInterval);paymentExpiryRefreshTriggered=false;renderPaymentCountdown();paymentCountdownInterval=setInterval(renderPaymentCountdown,1000)}
@@ -1339,9 +1487,9 @@ function orderHtml(o,a){
     <p><b>پکیج:</b> ${esc(o.service)}</p>
     <p><b>مشتری:</b> ${esc(o.name)} — ${esc(o.rubika)}</p>
     <p><b>مبلغ:</b> ${toman(o.price)}</p>
-    <p style="white-space:pre-wrap"><b>متن:</b> ${esc(o.text)}</p>
+    <div class="order-copy-block"><div class="order-copy-label"><b>متن تبلیغ:</b><button type="button" class="btn secondary order-copy-btn" onclick="copyOrderField('${esc(o.id)}','text')">کپی متن تبلیغ</button></div><p class="order-copy-content" style="white-space:pre-wrap">${esc(o.text)}</p></div>
     ${o.imageData?`<div style="margin:10px 0"><b>عکس تبلیغ:</b><img src="${o.imageData}" alt="عکس تبلیغ سفارش" loading="lazy" style="display:block;max-width:100%;max-height:360px;object-fit:contain;margin-top:8px;border-radius:12px;border:1px solid var(--border)"><a class="btn secondary" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;margin-top:7px;min-height:32px;padding:7px 12px" href="${o.imageData}" download="CODM-order-${esc(o.id)}.jpg">ذخیره عکس سفارش</a></div>`:""}
-    ${o.reply?`<p style="white-space:pre-wrap"><b>ریپلای:</b> ${esc(o.reply)}</p>`:""}
+    ${o.reply?`<div class="order-copy-block"><div class="order-copy-label"><b>ریپلای:</b><button type="button" class="btn secondary order-copy-btn" onclick="copyOrderField('${esc(o.id)}','reply')">کپی ریپلای</button></div><p class="order-copy-content" style="white-space:pre-wrap">${esc(o.reply)}</p></div>`:""}
     ${a?`<div class="actions">
       <button class="btn" onclick="copyUserInfo('${esc(o.id)}')">کپی اطلاعات کاربر</button>
       ${o.status==="در انتظار پرداخت"?`<button class="btn green" onclick="setStatus('${esc(o.id)}','پرداخت تأیید شد')">تأیید پرداخت</button>`:""}
@@ -1708,7 +1856,7 @@ function renderAdminDashboard(){
 }
 
 function showAdminTab(tab,scroll=true){
-  const allowed=["dashboard","orders","discounts","prices"];
+  const allowed=["dashboard","orders","discounts","prices","notifications"];
   if(!allowed.includes(tab))tab="orders";
   activeAdminTab=tab;
   document.querySelectorAll(".admin-tab").forEach(b=>{const on=b.dataset.tab===tab;b.classList.toggle("active",on);b.setAttribute("aria-selected",on?"true":"false");});
@@ -1908,7 +2056,7 @@ async function loginAdmin(){
 
     // Show the admin panel immediately after successful authentication.
     // Optional pricing/order loading must never prevent the panel from opening.
-    adminMode=true;
+    adminMode=true;window.adminMode=adminMode;
     syncCustomerOrdersSection();
     showAdminTab("orders",false);
     closeAdmin();
@@ -1941,7 +2089,7 @@ window.loginAdmin=loginAdmin;
 window.logoutAdmin=logoutAdmin;
 
 async function logoutAdmin(){
-  adminMode=false;
+  adminMode=false;window.adminMode=adminMode;
   syncCustomerOrdersSection();
   signOut();
   try{
@@ -1968,7 +2116,7 @@ async function init(){
   // Keep the anonymous identity across visits so the customer
   // can see the same orders again when reopening this content:// file.
   try{
-    adminMode=false;
+    adminMode=false;window.adminMode=adminMode;
     syncCustomerOrdersSection();
     await signInAnonymous();
     if(typeof loadPricingFromCloud==="function") await loadPricingFromCloud();
@@ -2015,7 +2163,7 @@ async function renderDiscountManager(){
       const uses=d.max_uses?`${num(d.used_count||0)} / ${num(d.max_uses)}`:`${num(d.used_count||0)} / ∞`;
       return `<div class="discount-list-item"><div class="discount-row"><div><div class="discount-code">${esc(d.code)}</div><div class="small">${value} تخفیف • استفاده: ${uses} • انقضا: ${esc(exp)}</div></div><div class="actions"><button class="btn secondary" type="button" onclick="toggleDiscountCode('${esc(d.id)}',${!d.active})">${d.active?"غیرفعال کردن":"فعال کردن"}</button><button class="btn red" type="button" onclick="deleteDiscountCode('${esc(d.id)}')">حذف</button></div></div></div>`;
     }).join("");
-  }catch(e){box.innerHTML=`<div class="small" style="color:#ef4444">خواندن کدهای تخفیف انجام نشد. ${esc(e.message||"")}</div>`;}
+  }catch(e){box.innerHTML=`<div class="small" style="color:#38bdf8">خواندن کدهای تخفیف انجام نشد. ${esc(e.message||"")}</div>`;}
 }
 async function createDiscountCode(){
   if(!adminMode||currentUser?.email!==ADMIN_EMAIL)return alert("دسترسی مدیر ندارید.");
@@ -2216,6 +2364,34 @@ window.cancelOrderNow = async function(orderId){
 })();
 </script>
 
+
+<div id="codmNotificationDock" aria-label="مرکز اعلان‌ها">
+  <div id="codmNotificationPanel" aria-live="polite"><div class="codm-notif-head"><span style="display:flex;align-items:center;gap:8px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#79c7ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg>مرکز اعلان‌ها</span><button class="codm-notif-clear" onclick="codmMarkNotificationsRead()">همه را خواندم</button></div><div id="codmNotificationList"></div></div>
+  <button id="codmNotificationBell" onclick="codmToggleNotifications()" aria-label="بازکردن اعلان‌ها" title="اعلان‌ها"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg><span id="codmNotificationCount"></span></button>
+</div><div id="codmToast" role="status" aria-live="polite"></div>
+<script id="codm-notification-center">
+(function(){
+ const KEY='codm_accountq_notifications_v1', SNAP='codm_accountq_order_snapshot_v1', READKEY='codm_accountq_read_broadcast_ids_v1';
+ let broadcastRows=[];
+ function read(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+ function readIds(){try{return JSON.parse(localStorage.getItem(READKEY)||'[]').map(String)}catch(e){return []}}
+ function saveReadIds(a){localStorage.setItem(READKEY,JSON.stringify([...new Set(a.map(String))]))}
+ function save(items){localStorage.setItem(KEY,JSON.stringify(items.slice(0,40)));render()}
+ function escN(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+ window.codmAddNotification=function(title,detail){const a=read();a.unshift({title,detail,time:new Date().toLocaleString('fa-IR'),read:false});save(a);window.codmToast(title+(detail?' — '+detail:''))};
+ window.codmToast=function(text){const el=document.getElementById('codmToast');if(!el)return;el.textContent=text;el.classList.add('show');clearTimeout(window._codmToastTimer);window._codmToastTimer=setTimeout(()=>el.classList.remove('show'),3600)};
+ function render(){const local=read(),list=document.getElementById('codmNotificationList'),count=document.getElementById('codmNotificationCount');if(!list||!count)return;const seen=readIds();const unread=local.filter(x=>!x.read).length+broadcastRows.filter(x=>!seen.includes(String(x.id))).length;count.textContent=unread>99?'99+':unread;count.style.display=unread?'flex':'none';const remote=broadcastRows.map(x=>`<div class="codm-notif-item" style="${seen.includes(String(x.id))?'opacity:.68':''}"><b>${escN(x.title)}</b><div>${escN(x.body)}</div><small>${escN(new Date(x.created_at).toLocaleString('fa-IR'))}${seen.includes(String(x.id))?' • خوانده‌شده':' • جدید'}</small></div>`);const localHtml=local.map(x=>`<div class="codm-notif-item" style="${x.read?'opacity:.68':''}"><b>${escN(x.title)}</b><div>${escN(x.detail||'')}</div><small>${escN(x.time||'')}${x.read?' • خوانده‌شده':' • جدید'}</small></div>`);list.innerHTML=remote.concat(localHtml).join('')||'<div class="codm-notif-item">هنوز اعلانی ثبت نشده است.</div>'}
+ window.codmToggleNotifications=function(){document.getElementById('codmNotificationPanel')?.classList.toggle('open');render();window.codmLoadBroadcastNotifications()};
+ window.codmMarkNotificationsRead=function(){save(read().map(x=>({...x,read:true})));saveReadIds([...readIds(),...broadcastRows.map(x=>String(x.id))]);render();document.getElementById('codmNotificationPanel')?.classList.remove('open')};
+ window.codmClearNotifications=function(){window.codmMarkNotificationsRead()};
+ window.codmTrackOrderChanges=function(list){if(!Array.isArray(list))return;const current={};list.forEach(o=>{if(o&&o.id!=null)current[String(o.id)]=String(o.status||'')});let old={};try{old=JSON.parse(localStorage.getItem(SNAP)||'{}')}catch(e){};if(Object.keys(old).length){Object.keys(current).forEach(id=>{if(old[id]!==undefined&&old[id]!==current[id]){window.codmAddNotification('وضعیت سفارش تغییر کرد',`سفارش ${id}: ${current[id]}`)}});if(window._codmHasFirstSnapshot&&Object.keys(current).some(id=>old[id]===undefined)){window.codmAddNotification('سفارش جدید','یک سفارش جدید در فهرست دیده شد')}}localStorage.setItem(SNAP,JSON.stringify(current));window._codmHasFirstSnapshot=true};
+ window.publishAdminNotification=async function(){const msg=document.getElementById('adminNotificationMessage'),title=(document.getElementById('adminNotificationTitle')?.value||'').trim(),body=(document.getElementById('adminNotificationBody')?.value||'').trim();if(!adminMode||!currentUser||currentUser.email!==ADMIN_EMAIL){if(msg)msg.textContent='فقط مدیر می‌تواند اعلان ارسال کند.';return}if(!title||!body){if(msg)msg.textContent='عنوان و متن اعلان را وارد کن.';return}if(msg)msg.textContent='در حال ارسال...';try{await sbFetch('site_notifications',{method:'POST',headers:{Prefer:'return=minimal'},body:JSON.stringify({title,body,created_at:new Date().toISOString(),active:true})});if(msg)msg.textContent='اعلان برای مشتری‌ها منتشر شد.';document.getElementById('adminNotificationTitle').value='';document.getElementById('adminNotificationBody').value='';await window.codmLoadBroadcastNotifications();window.codmToast('اعلان منتشر شد')}catch(e){console.error(e);if(msg)msg.textContent='ارسال انجام نشد: '+(e.message||'خطای نامشخص')}};
+ window.codmDeleteBroadcastNotification=async function(id){if(!adminMode||!currentUser||currentUser.email!==ADMIN_EMAIL){window.codmToast('فقط مدیر می‌تواند اعلان را حذف کند.');return}if(!confirm('این اعلان برای همه کاربران حذف شود؟'))return;try{await sbFetch('site_notifications?id=eq.'+encodeURIComponent(id),{method:'DELETE',headers:{Prefer:'return=minimal'}});broadcastRows=broadcastRows.filter(x=>String(x.id)!==String(id));render();await window.codmLoadBroadcastNotifications();window.codmToast('اعلان حذف شد')}catch(e){console.error(e);window.codmToast('حذف انجام نشد: '+(e.message||'خطا'))}};
+ window.codmLoadBroadcastNotifications=async function(){try{const rows=await sbFetch('site_notifications?select=id,title,body,created_at&active=eq.true&order=created_at.desc&limit=30');broadcastRows=Array.isArray(rows)?rows:[];const history=document.getElementById('adminNotificationHistory');if(history)history.innerHTML=broadcastRows.slice(0,30).map(x=>`<div class="codm-notif-item"><b>${escN(x.title)}</b><div>${escN(x.body)}</div><small>${escN(new Date(x.created_at).toLocaleString('fa-IR'))}</small><button type="button" class="codm-notif-clear" style="margin-top:7px;border-color:#8a2d42;color:#ffc2cd" onclick="codmDeleteBroadcastNotification('${escN(x.id)}')">حذف اعلان</button></div>`).join('')||'<div class="small">اعلانی ثبت نشده است.</div>';render()}catch(e){console.warn('Broadcast notifications could not load',e)}};
+ render();window.codmLoadBroadcastNotifications();setInterval(()=>window.codmLoadBroadcastNotifications(),15000);
+})();
+</script>
+
 </body>
 </html>
 
@@ -2276,4 +2452,12 @@ body{background:radial-gradient(ellipse at 50% -10%,#351015 0,transparent 35%),l
 .admin-order-status-tab:active{transform:scale(.98)}
 .admin-order-empty{padding:24px 14px;text-align:center;border:1px dashed #475447;border-radius:14px;color:#aab8a5;background:#111a12;font-size:13px}
 @media(min-width:650px){.admin-order-status-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}}
+</style>
+
+<style id="order-text-small-copy-controls">
+.order-copy-block{margin:6px 0 8px;padding:8px 9px;border:1px solid #26364c;border-radius:10px;background:#090f19}
+.order-copy-label{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:11px;line-height:1.5;color:#cbd5e1}
+.order-copy-content{font-size:10px!important;line-height:1.55!important;margin:5px 0 0!important;color:#d1d9e6;overflow-wrap:anywhere}
+.order-copy-btn{font-size:10px!important;padding:5px 8px!important;min-height:28px;border-radius:8px!important;white-space:nowrap}
+@media(max-width:520px){.order-copy-content{font-size:9.5px!important}.order-copy-btn{font-size:10px!important}}
 </style>
