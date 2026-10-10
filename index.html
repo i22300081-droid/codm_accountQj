@@ -15,7 +15,7 @@
 body{margin:0;background:radial-gradient(ellipse at 50% -10%,#103b68 0,#071321 38%,#040810 78%);color:var(--text);font-family:Tahoma,Arial,sans-serif;overflow-x:hidden}
 button,input,textarea,select{font:inherit}
 .container{width:min(1100px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(8,8,13,.88);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:20;background:rgba(8,8,13,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{font-weight:900;font-size:18px}.brand span{color:#b084ff}
 .navlinks{display:flex;gap:8px}
@@ -153,7 +153,7 @@ footer{
 </style>
 
 <style id="leaderboard-ui">
-.page-hidden{display:none!important}.bottom-nav{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);width:min(430px,calc(100% - 24px));display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:9px;background:rgba(9,10,14,.96);border:1px solid rgba(248,55,70,.25);border-radius:22px;box-shadow:0 18px 50px #0009;backdrop-filter:blur(16px);z-index:9998}.bottom-nav-btn{border:1px solid #ffffff14;border-radius:16px;padding:12px 10px;background:linear-gradient(135deg,#26262b,#101014);color:#f5f5f5;font-family:inherit;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}.bottom-nav-btn.order{background:linear-gradient(135deg,#a71928,#401016)}.bottom-nav-btn.leader{background:linear-gradient(135deg,#303038,#151519)}.bottom-nav-icon{font-size:22px;line-height:1}.bottom-nav-text{font-size:13px}body{padding-bottom:92px}
+.page-hidden{display:none!important}.bottom-nav{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);width:min(430px,calc(100% - 24px));display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:9px;background:rgba(9,10,14,.96);border:1px solid rgba(248,55,70,.25);border-radius:22px;box-shadow:0 18px 50px #0009;backdrop-filter:blur(8px);z-index:9998}.bottom-nav-btn{border:1px solid #ffffff14;border-radius:16px;padding:12px 10px;background:linear-gradient(135deg,#26262b,#101014);color:#f5f5f5;font-family:inherit;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}.bottom-nav-btn.order{background:linear-gradient(135deg,#a71928,#401016)}.bottom-nav-btn.leader{background:linear-gradient(135deg,#303038,#151519)}.bottom-nav-icon{font-size:22px;line-height:1}.bottom-nav-text{font-size:13px}body{padding-bottom:92px}
 .order-leaderboard{display:grid;gap:14px}.reservation-board{padding:18px!important;background:#101014!important;border:1px solid #34343b!important}.reservation-banner{margin:0 0 14px;padding:18px 15px;border:1px solid #6d252d;border-radius:18px;background:linear-gradient(120deg,#291116,#151519);color:#f3dadd;text-align:center;font-size:14px;line-height:1.9}.reservation-banner strong{font-size:18px;color:#ff7a84}.reservation-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:0 0 18px}.legend-item{font-size:10px;padding:6px 9px;border-radius:20px;background:#19191e;border:1px solid #ffffff13}.legend-green{color:#7ce6a4}.legend-amber{color:#ffd16d}.legend-blue{color:#8bc8ff}.legend-red{color:#ff8992}
 .leaderboard-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;padding:17px;border:1px solid #34343b;border-radius:20px;background:linear-gradient(145deg,#1b1b21,#111115)!important;min-width:0;overflow:hidden}.leaderboard-row:before{content:"";position:absolute;right:0;top:0;bottom:0;width:4px;background:#8a8a95}.leaderboard-row.status-done:before{background:#25c875}.leaderboard-row.status-running:before{background:#f4b63d}.leaderboard-row.status-reserved:before{background:#3999ff}.leaderboard-row.status-cancelled:before,.leaderboard-row.status-expired:before{background:#ff4757}.leaderboard-info{min-width:0;text-align:right;grid-column:1;grid-row:1}.leaderboard-info b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:17px;color:#fff;font-weight:900}.leaderboard-info .leaderboard-service{display:block;color:#a8a8b2;font-size:12px;margin-top:5px}.leaderboard-date{display:block;color:#f0d3a0;font-size:13px;font-weight:800;margin-top:12px;direction:rtl;text-align:right}.leaderboard-time{display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:900;color:#fff;direction:rtl;white-space:nowrap;margin-top:5px;text-align:right;background:#29292f;padding:6px 9px;border-radius:9px}.leaderboard-status{justify-self:end;grid-column:2;grid-row:1;display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border-radius:10px;background:#25252b;color:#d6d6dc;border:1px solid #ffffff12;font-size:11px;font-weight:900;white-space:nowrap}.leaderboard-status:before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;display:inline-block}.status-done .leaderboard-status{background:#103421;color:#7ce6a4;border-color:#1d7545}.status-running .leaderboard-status{background:#3b2b0e;color:#ffd16d;border-color:#80601c}.status-reserved .leaderboard-status{background:#102a40;color:#8bc8ff;border-color:#205982}.status-cancelled .leaderboard-status,.status-expired .leaderboard-status{background:#3b151b;color:#ff8992;border-color:#792631}.leaderboard-countdown{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 12px;border-radius:13px;background:#0d0d11;border:1px solid #2c2c33}.countdown-label{font-size:11px;color:#a8a8b2}.countdown-value{font-size:14px;font-weight:900;direction:ltr;color:#ffb3b9;font-variant-numeric:tabular-nums}.status-done .countdown-value{color:#7ce6a4}.status-running .countdown-value{color:#ffd16d}.status-reserved .countdown-value{color:#8bc8ff}.leaderboard-delete{grid-column:1/-1;justify-self:start;padding:7px 11px;border-radius:9px;border:1px solid #8b2832;background:#36151a;color:#ffc1c5;font-size:11px;cursor:pointer}.leaderboard-empty{padding:25px 16px;text-align:center;color:#b6b6c0;border:1px dashed #41414a;border-radius:16px;line-height:1.9}
 @media(max-width:700px){.leaderboard-row{padding:14px;gap:10px}.leaderboard-info b{font-size:16px}.leaderboard-date{font-size:12px}.leaderboard-time{font-size:13px}.leaderboard-status{font-size:10px;padding:7px 8px}.reservation-banner{font-size:13px}.countdown-value{font-size:13px}}
@@ -194,7 +194,7 @@ body{
     radial-gradient(circle at 10% 20%,rgba(96,165,250,.08),transparent 30%),
     linear-gradient(180deg,#07111f 0%,#0a1422 52%,#08111d 100%);
 }
-header{background:rgba(7,17,31,.62)!important;border-bottom:1px solid rgba(255,255,255,.10)!important;backdrop-filter:blur(22px) saturate(140%)!important;-webkit-backdrop-filter:blur(22px) saturate(140%);}
+header{background:rgba(7,17,31,.62)!important;border-bottom:1px solid rgba(255,255,255,.10)!important;backdrop-filter:blur(8px) saturate(120%)!important;-webkit-backdrop-filter:blur(8px) saturate(120%);}
 .hero,.card,.order,.modal-box,.notice,.schedule-day,.leaderboard-row{
   background:linear-gradient(135deg,rgba(255,255,255,.095),rgba(255,255,255,.035))!important;
   border:1px solid rgba(255,255,255,.14)!important;
@@ -1144,6 +1144,7 @@ input:focus,select:focus,textarea:focus{border-color:#f5c542!important;box-shado
         <div><label for="newDiscountValue">مقدار تخفیف</label><input id="newDiscountValue" type="number" min="1" placeholder="مثلاً ۱۰"></div>
         <div><label for="newDiscountMaxUses">حداکثر استفاده</label><input id="newDiscountMaxUses" type="number" min="0" placeholder="۰ = نامحدود"></div>
         <div><label for="newDiscountExpires">تاریخ و ساعت انقضا (اختیاری)</label><input id="newDiscountExpires" type="datetime-local"></div>
+        <div style="grid-column:1/-1"><label for="newDiscountService">محصول / پکیج مشمول تخفیف</label><select id="newDiscountService"><option value="all">همه محصولات</option></select></div>
       </div>
       <div class="notice" style="margin:12px 0">نکته: برای تخفیف درصدی، عدد ۱۰ یعنی ۱۰٪. برای مبلغ ثابت، مبلغ به تومان وارد می‌شود.</div>
       <button class="btn green" type="button" onclick="createDiscountCode()">＋ ساخت کد تخفیف</button>
@@ -1279,6 +1280,8 @@ async function applyDiscount(){
     if(d.expires_at && new Date(d.expires_at).getTime()<=Date.now()) throw new Error("این کد تخفیف منقضی شده است.");
     if(d.max_uses!==null && Number(d.used_count||0)>=Number(d.max_uses)) throw new Error("ظرفیت استفاده از این کد تخفیف تمام شده است.");
     if(d.discount_type==="percent" && (Number(d.discount_value)<=0 || Number(d.discount_value)>100)) throw new Error("درصد تخفیف نامعتبر است.");
+    const selectedService=services.find(x=>x.id===Number(document.getElementById("service")?.value));
+    if(d.applies_to_service && d.applies_to_service!=="all" && (!selectedService || selectedService.name!==d.applies_to_service)) throw new Error("این کد تخفیف برای محصول انتخاب‌شده نیست.");
     appliedDiscount={id:d.id,code:d.code,type:d.discount_type,value:Number(d.discount_value),amount:0};
     const s=services.find(x=>x.id===Number(document.getElementById("service").value));
     if(s) appliedDiscount.amount=Math.min(Number(s.price), d.discount_type==="percent"?Math.floor(Number(s.price)*Number(d.discount_value)/100):Number(d.discount_value));
@@ -1493,7 +1496,8 @@ function orderHtml(o,a){
     ${a?`<div class="actions">
       <button class="btn" onclick="copyUserInfo('${esc(o.id)}')">کپی اطلاعات کاربر</button>
       ${o.status==="در انتظار پرداخت"?`<button class="btn green" onclick="setStatus('${esc(o.id)}','پرداخت تأیید شد')">تأیید پرداخت</button>`:""}
-      <button class="btn green" onclick="setStatus('${esc(o.id)}','تأیید شد')">اتمام سفارش</button>
+      <button class="btn green" onclick="setStatus('${esc(o.id)}','تأیید شد')">اتمام سفارش</button> 
+      ${["تأیید شد","تکمیل شده","انجام شد","تکمیل‌شده"].includes(o.status)?`<button class="btn secondary" onclick="setStatus('${esc(o.id)}','رزرو شده')">بازگردانی به رزرو شده</button>`:""}
       <button class="btn secondary" onclick="setStatus('${esc(o.id)}','در حال اجرا')" ${!['پرداخت تأیید شد','در حال اجرا'].includes(o.status)&&!(o.status==='رزرو شده'&&o.scheduleDate&&o.scheduleTime)?'disabled title="ابتدا پرداخت را تأیید کنید یا تاریخ و ساعت رزرو را ذخیره کنید"':''}>در حال اجرا</button>
       <button type="button" class="btn red" onclick="window.cancelOrderNow('${esc(o.id)}'); return false;">لغو</button>
     </div>
@@ -2151,7 +2155,15 @@ function loadPrices(){
   return;
 }
 
+function fillDiscountServiceOptions(){
+  const el=document.getElementById("newDiscountService");
+  if(!el)return;
+  const selected=el.value||"all";
+  el.innerHTML='<option value="all">همه محصولات</option>'+services.map(s=>`<option value="${esc(s.name)}">${esc(s.name)}</option>`).join("");
+  el.value=[...el.options].some(o=>o.value===selected)?selected:"all";
+}
 async function renderDiscountManager(){
+  fillDiscountServiceOptions();
   const box=document.getElementById("discountManager");
   if(!box) return;
   try{
@@ -2161,7 +2173,7 @@ async function renderDiscountManager(){
       const exp=d.expires_at?new Date(d.expires_at).toLocaleString("fa-IR"):"بدون انقضا";
       const value=d.discount_type==="percent"?`${num(d.discount_value)}٪`:toman(d.discount_value);
       const uses=d.max_uses?`${num(d.used_count||0)} / ${num(d.max_uses)}`:`${num(d.used_count||0)} / ∞`;
-      return `<div class="discount-list-item"><div class="discount-row"><div><div class="discount-code">${esc(d.code)}</div><div class="small">${value} تخفیف • استفاده: ${uses} • انقضا: ${esc(exp)}</div></div><div class="actions"><button class="btn secondary" type="button" onclick="toggleDiscountCode('${esc(d.id)}',${!d.active})">${d.active?"غیرفعال کردن":"فعال کردن"}</button><button class="btn red" type="button" onclick="deleteDiscountCode('${esc(d.id)}')">حذف</button></div></div></div>`;
+      return `<div class="discount-list-item"><div class="discount-row"><div><div class="discount-code">${esc(d.code)}</div><div class="small">${value} تخفیف • محصول: ${esc(d.applies_to_service||"همه محصولات")} • استفاده: ${uses} • انقضا: ${esc(exp)}</div></div><div class="actions"><button class="btn secondary" type="button" onclick="toggleDiscountCode('${esc(d.id)}',${!d.active})">${d.active?"غیرفعال کردن":"فعال کردن"}</button><button class="btn red" type="button" onclick="deleteDiscountCode('${esc(d.id)}')">حذف</button></div></div></div>`;
     }).join("");
   }catch(e){box.innerHTML=`<div class="small" style="color:#38bdf8">خواندن کدهای تخفیف انجام نشد. ${esc(e.message||"")}</div>`;}
 }
@@ -2176,7 +2188,7 @@ async function createDiscountCode(){
   if(!Number.isFinite(value)||value<=0||(type==="percent"&&value>100))return alert("مقدار تخفیف نامعتبر است.");
   if(!Number.isFinite(maxUses)||maxUses<0)return alert("سقف استفاده نامعتبر است.");
   try{
-    await sbFetch("discount_codes",{method:"POST",headers:{Prefer:"return=representation"},body:JSON.stringify({code,discount_type:type,discount_value:Math.floor(value),max_uses:maxUses>0?Math.floor(maxUses):null,used_count:0,active:true,expires_at:exp?new Date(exp).toISOString():null})});
+    await sbFetch("discount_codes",{method:"POST",headers:{Prefer:"return=representation"},body:JSON.stringify({code,discount_type:type,discount_value:Math.floor(value),max_uses:maxUses>0?Math.floor(maxUses):null,used_count:0,active:true,expires_at:exp?new Date(exp).toISOString():null,applies_to_service:document.getElementById("newDiscountService")?.value||"all"})});
     ["newDiscountCode","newDiscountValue","newDiscountMaxUses","newDiscountExpires"].forEach(id=>{const e=document.getElementById(id);if(e)e.value="";});
     document.getElementById("discountAdminMessage").textContent=`✅ کد ${code} ساخته شد.`;
     await renderDiscountManager();
@@ -2373,7 +2385,8 @@ window.cancelOrderNow = async function(orderId){
 (function(){
  const KEY='codm_accountq_notifications_v1', SNAP='codm_accountq_order_snapshot_v1', READKEY='codm_accountq_read_broadcast_ids_v1';
  let broadcastRows=[];
- function read(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+ function isOrderNotice(x){const t=String((x&&x.title)||'')+' '+String((x&&(x.detail||x.body))||'');return /سفارش|وضعیت سفارش|order\s*(status|changed|new)|order changed/i.test(t)}
+ function read(){try{return JSON.parse(localStorage.getItem(KEY)||'[]').filter(x=>!isOrderNotice(x))}catch(e){return []}}
  function readIds(){try{return JSON.parse(localStorage.getItem(READKEY)||'[]').map(String)}catch(e){return []}}
  function saveReadIds(a){localStorage.setItem(READKEY,JSON.stringify([...new Set(a.map(String))]))}
  function save(items){localStorage.setItem(KEY,JSON.stringify(items.slice(0,40)));render()}
@@ -2384,10 +2397,11 @@ window.cancelOrderNow = async function(orderId){
  window.codmToggleNotifications=function(){document.getElementById('codmNotificationPanel')?.classList.toggle('open');render();window.codmLoadBroadcastNotifications()};
  window.codmMarkNotificationsRead=function(){save(read().map(x=>({...x,read:true})));saveReadIds([...readIds(),...broadcastRows.map(x=>String(x.id))]);render();document.getElementById('codmNotificationPanel')?.classList.remove('open')};
  window.codmClearNotifications=function(){window.codmMarkNotificationsRead()};
- window.codmTrackOrderChanges=function(list){if(!Array.isArray(list))return;const current={};list.forEach(o=>{if(o&&o.id!=null)current[String(o.id)]=String(o.status||'')});let old={};try{old=JSON.parse(localStorage.getItem(SNAP)||'{}')}catch(e){};if(Object.keys(old).length){Object.keys(current).forEach(id=>{if(old[id]!==undefined&&old[id]!==current[id]){window.codmAddNotification('وضعیت سفارش تغییر کرد',`سفارش ${id}: ${current[id]}`)}});if(window._codmHasFirstSnapshot&&Object.keys(current).some(id=>old[id]===undefined)){window.codmAddNotification('سفارش جدید','یک سفارش جدید در فهرست دیده شد')}}localStorage.setItem(SNAP,JSON.stringify(current));window._codmHasFirstSnapshot=true};
+ window.codmTrackOrderChanges=function(list){if(!Array.isArray(list))return;const current={};list.forEach(o=>{if(o&&o.id!=null)current[String(o.id)]=String(o.status||'')});localStorage.setItem(SNAP,JSON.stringify(current));window._codmHasFirstSnapshot=true};
  window.publishAdminNotification=async function(){const msg=document.getElementById('adminNotificationMessage'),title=(document.getElementById('adminNotificationTitle')?.value||'').trim(),body=(document.getElementById('adminNotificationBody')?.value||'').trim();if(!adminMode||!currentUser||currentUser.email!==ADMIN_EMAIL){if(msg)msg.textContent='فقط مدیر می‌تواند اعلان ارسال کند.';return}if(!title||!body){if(msg)msg.textContent='عنوان و متن اعلان را وارد کن.';return}if(msg)msg.textContent='در حال ارسال...';try{await sbFetch('site_notifications',{method:'POST',headers:{Prefer:'return=minimal'},body:JSON.stringify({title,body,created_at:new Date().toISOString(),active:true})});if(msg)msg.textContent='اعلان برای مشتری‌ها منتشر شد.';document.getElementById('adminNotificationTitle').value='';document.getElementById('adminNotificationBody').value='';await window.codmLoadBroadcastNotifications();window.codmToast('اعلان منتشر شد')}catch(e){console.error(e);if(msg)msg.textContent='ارسال انجام نشد: '+(e.message||'خطای نامشخص')}};
  window.codmDeleteBroadcastNotification=async function(id){if(!adminMode||!currentUser||currentUser.email!==ADMIN_EMAIL){window.codmToast('فقط مدیر می‌تواند اعلان را حذف کند.');return}if(!confirm('این اعلان برای همه کاربران حذف شود؟'))return;try{await sbFetch('site_notifications?id=eq.'+encodeURIComponent(id),{method:'DELETE',headers:{Prefer:'return=minimal'}});broadcastRows=broadcastRows.filter(x=>String(x.id)!==String(id));render();await window.codmLoadBroadcastNotifications();window.codmToast('اعلان حذف شد')}catch(e){console.error(e);window.codmToast('حذف انجام نشد: '+(e.message||'خطا'))}};
- window.codmLoadBroadcastNotifications=async function(){try{const rows=await sbFetch('site_notifications?select=id,title,body,created_at&active=eq.true&order=created_at.desc&limit=30');broadcastRows=Array.isArray(rows)?rows:[];const history=document.getElementById('adminNotificationHistory');if(history)history.innerHTML=broadcastRows.slice(0,30).map(x=>`<div class="codm-notif-item"><b>${escN(x.title)}</b><div>${escN(x.body)}</div><small>${escN(new Date(x.created_at).toLocaleString('fa-IR'))}</small><button type="button" class="codm-notif-clear" style="margin-top:7px;border-color:#8a2d42;color:#ffc2cd" onclick="codmDeleteBroadcastNotification('${escN(x.id)}')">حذف اعلان</button></div>`).join('')||'<div class="small">اعلانی ثبت نشده است.</div>';render()}catch(e){console.warn('Broadcast notifications could not load',e)}};
+ window.codmLoadBroadcastNotifications=async function(){try{const rows=await sbFetch('site_notifications?select=id,title,body,created_at&active=eq.true&order=created_at.desc&limit=100');broadcastRows=Array.isArray(rows)?rows.filter(x=>!isOrderNotice(x)):[];const history=document.getElementById('adminNotificationHistory');if(history)history.innerHTML=broadcastRows.slice(0,30).map(x=>`<div class="codm-notif-item"><b>${escN(x.title)}</b><div>${escN(x.body)}</div><small>${escN(new Date(x.created_at).toLocaleString('fa-IR'))}</small><button type="button" class="codm-notif-clear" style="margin-top:7px;border-color:#8a2d42;color:#ffc2cd" onclick="codmDeleteBroadcastNotification('${escN(x.id)}')">حذف اعلان</button></div>`).join('')||'<div class="small">اعلانی ثبت نشده است.</div>';render()}catch(e){console.warn('Broadcast notifications could not load',e)}};
+ try{localStorage.setItem(KEY,JSON.stringify(read().slice(0,40)))}catch(e){}
  render();window.codmLoadBroadcastNotifications();setInterval(()=>window.codmLoadBroadcastNotifications(),15000);
 })();
 </script>
